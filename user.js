@@ -489,4 +489,3 @@ user_pref("mousewheel.acceleration.factor", 10);                    // [integer]
 user_pref("mousewheel.acceleration.start", 0);                      // [integer] when to apply mouse wheel.acceleration.factor (after how many scroll clicks of mouse wheel) - value must be greater than -1
 user_pref("mousewheel.default.delta_multiplier_y", 85);             // [integer] sets the vertical step size
 //user_pref("mousewheel.min_line_scroll_amount", 1);                // [integer] how many lines to scroll with mouse wheel (approx.) - doesn't seem to have any affect
-At this point it is important to review each of the settings to be sure they are configured the way you want. For example, if you are into social networking and use the social features of Firefox, you will want to comment out some or all of the social networking preferences or change their values.
