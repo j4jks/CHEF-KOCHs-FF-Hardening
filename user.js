@@ -330,6 +330,8 @@ user_pref("dom.vr.oculus.enabled", false);
 user_pref("dom.vr.oculus050.enabled", false);
 user_pref("dom.w3c_touch_events.enabled", 0);
 user_pref("javascript.options.asmjs", false);
+user_pref("dom.mozTCPSocket.enabled", false);								// [boolean] on ESR versions only, TCPSocket is not used
+user_pref("dom.push.serverURL", "");										// [integer] Disables DOM Push additional URL
 
 /////////////////////////////////////////////////
 //// === WEBSITE APPERANCE/FUNCTIONALITY === ////
@@ -444,9 +446,12 @@ user_pref("nglayout.enable_drag_images", false);                    // [boolean]
 user_pref("reader.enabled", false);                                 // [boolean] whether to enable the Reader View functionality (this pref to be introduced sometime after v38.0.5)
 user_pref("reader.parse-on-load.enabled", false);                   // [boolean] presumably whether to build a "Reader View" version of the page when it is loaded
 user_pref("startup.homepage_welcome_url", "");
-user_pref("startup.homepage_override_url", "");
+user_pref("startup.homepage_welcome_url.additional", "")			// [integer] Disables the UI Welcome stuff in ESR/FF on first startup
+user_pref("startup.homepage_override_url", "");						// [integer] 
 user_pref("ui.submenuDelay", 150);                                  // [integer] delay in ms before a sub-menu of a context menu is displayed
 user_pref("view_source.tab", false);                                // [boolean] whether to view web page source code in a tab or a window which offers more options
+user_pref("browser.uitour.enabled", false);							// [boolean] Disable the UI tour at startup
+user_pref("browser.uitour.url", "");								// [integer] ^^
 
 /*
     Pocket (3rd party service)
