@@ -3,7 +3,7 @@
 ////////////////////////////////
 
 /*
-    These settings are specific to Linux Mint, but should be fine for any Debian based distro which uses the APT (Advanced Package Tool) package manager
+    These settings are specific to Linux Mint only, but should be fine for any Debian based distro which uses the APT (Advanced Package Tool) package manager
 */
 user_pref("network.protocol-handler.app.apt", "/usr/bin/apturl");       // [string] path to APT URL handler
 user_pref("network.protocol-handler.app.apt+http", "/usr/bin/apturl");  // [string] path to APT URL handler
@@ -16,7 +16,7 @@ user_pref("network.protocol-handler.warn-external.apt+http", true);
 
 user_pref("browser.sessionhistory.max_total_viewers", 5);   // [integer] how many pages to store in memory - used when moving back/forward in history - -1=auto-determine based on available memory
 /*
-    these settings will disable disk caching and store all cached objects in RAM - recommended as long as you don't mind the cache getting dumped at reboot or when Firefox is restarted
+    These settings will disable disk caching and store all cached objects in RAM - recommended as long as you don't mind the cache getting dumped at reboot or when Firefox is restarted
 */
 user_pref("browser.cache.disk.enable", false);                 // [boolean] whether to use the hard disk for cache - set to false to force everything to RAM
 user_pref("browser.cache.disk_cache_ssl", false);              // [boolean] whether to cache documents viewed over a secure connection (https)
@@ -51,8 +51,8 @@ user_pref("privacy.clearOnShutdown.offlineApps", true);        // [boolean] whet
 //////////////////////////
 
 /*
-    --- program updates ---
-    i suggest to disallow any automatic updating - you should always read th change logs and then decide what to do since features may have been added that you absolutely do not want, or features removed that you do want. if yo choose to use an old build, i would suggest using the ESR releases https://www.mozilla.org/en-US/firefox/organizations/faq/
+    --- Program Updates ---
+    I suggest to disallow any automatic updating - you should always read the changelogs and then decide what to do since features may have been added that you absolutely do not want, or features removed that you do want. if yo choose to use an old build, i would suggest using the ESR releases: https://www.mozilla.org/en-US/firefox/organizations/faq/
 */
 user_pref("app.update.enabled", false);                             // [boolean] whether to enable browser auto-updating
 user_pref("app.update.auto", false);                                // [boolean] auto-install updates - app.update.enabled must be enabled
@@ -69,8 +69,8 @@ user_pref("extensions.update.autoUpdateDefault", false);    // [boolean] whether
 user_pref("extensions.update.enabled", false);              // [boolean] whether to auto-check for extension updates
 user_pref("extensions.blocklist.url", "");                  // [string] url from which to download list of blocked extensions
 /*
-    --- plugin updates ---
-    if you disable plugin update checking and have plugins instaled, be sure t manually check for plugin updates on a regular basis. personally i do no have any plugins installed - most video/embedded content, including PDFs for the popular sites can be viewed natively in Firefox without plugins
+    --- Plugin Updates ---
+    If you disable plugin update checking and have plugins installed, be sure t manually check for plugin updates on a regular basis. personally i do no have any plugins installed - most video/embedded content, including PDFs for the popular sites can be viewed natively in Firefox without plugins
 */
 user_pref("media.gmp-manager.url", "");                                             // [string] OpenH.264 plugin update URL - set to blank to disable update checking
 user_pref("plugins.update.notifyUser", false);                                      // [boolean] whether to check for plugin updates - this may not cover the OpenH264 plugin
@@ -198,7 +198,7 @@ user_pref("startup.homepage_welcome_url", "about:about");           // [string] 
 
 /*
     --- Mozilla/Google Safe Browsing ---
-    i would recommend disabling safe browsing entirely and using a good DN server, such as OpenDNS, in combination with uBlock and its anti-malware filter lists to mitigate the threat of domains hosting malware, else th URLs of some, or possibly all of the sites you visit and files you download may be sent to Google along with your IP address. for more see https://www.google.com/intl/en/chrome/browser/privacy/
+    I would recommend disabling safe-browsing entirely and using a good DN server, such as OpenDNS/dnscrypt, in combination with uBlock and its anti-malware filter lists to mitigate the threat of domains hosting malware, else th URLs of some, or possibly all of the sites you visit and files you download may be sent to Google along with your IP address. for more see https://www.google.com/intl/en/chrome/browser/privacy/
 */
 user_pref("browser.safebrowsing.downloads.enabled", false);         // [boolean] unknown, but since we're not using Google "Safe Browsing" feature, lets' make sure it's dead
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);  // [boolean] unknown, but since we're not using Google "Safe Browsing" feature, lets' make sure it's dead
@@ -252,9 +252,9 @@ user_pref("browser.search.param.yahoo-fr-ja", "");      // [string] remove track
 user_pref("browser.search.suggest.enabled", false);     // [boolean] whether to enable search suggestions for search bar
 user_pref("keyword.enabled", false);                    // [boolean] whether to allow searching from the address bar - !!! potential security/privacy issue since your search query can be stored by the search engine !!!
 
-/////////////////////////
-//// === NETWORK === ////
-/////////////////////////
+////////////////////////////
+//// === NETWORKING === ////
+////////////////////////////
 
 user_pref("browser.casting.enabled", false);              // [boolean] whether to send HTML5 video to other devices on the network
 user_pref("gfx.layerscope.enabled", false);
@@ -284,9 +284,9 @@ user_pref("network.predictor.enabled", false);              // [boolean] similar
 user_pref("network.prefetch-next", false);                  // [boolean] disable prefetching pages not yet visited
 user_pref("network.proxy.socks_remote_dns", true);          // [boolean] true=have proxy do DNS lookups, false= do them client side
 
-//////////////////////////////////
-//// === DOM (JAVASCRIPT) === ////
-//////////////////////////////////
+/////////////////////////////////////////
+//// === DOM (mostly JAVASCRIPT) === ////
+/////////////////////////////////////////
 
 user_pref("dom.allow_cut_copy", false);                                     // [boolean] whether to allow JS to manipulate clipboard data (requires user intervention, like clicking a button)
 user_pref("dom.allow_scripts_to_close_windows", false);
@@ -323,7 +323,7 @@ user_pref("dom.network.enabled", false);                                    // [
 user_pref("dom.popup_maximum", 5);
 user_pref("dom.server-events.enabled", false);                              // [boolean] whether to allow Server-Sent Events from the web server
 user_pref("dom.storage.enabled", true);                                     // [boolean] whether to allow DOM storage - this can be controlled in a more granular way with uMatrix, however if no add-on is used to control storage and you are concerned about preserving your privacy, it is recommended to set this to false, though this will break some websites
-user_pref("dom.telephony.enabled", false);                                  // [boolean] whether to enable JS internet telephony - no known uses and potential security/privacy threat
+user_pref("dom.telephony.enabled", false);                                  // [boolean] whether to enable JS Internet telephony - no known uses and potential security/privacy threat
 user_pref("dom.vibrator.enabled", false);                                   // [boolean] whether to allow JS to shake the screen
 user_pref("dom.vr.enabled", false);                                         // [boolean] whether to enable JS to detect virtual reality devices - possible privacy/fingerprinting issue
 user_pref("dom.vr.oculus.enabled", false);
