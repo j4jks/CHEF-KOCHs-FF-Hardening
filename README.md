@@ -11,4 +11,4 @@
 	
 	
 
-**This project is beta, some settings are not recommend to apply because it might break stuff.**
+**This project is beta**, some settings are not recommend to apply because it might break stuff.
