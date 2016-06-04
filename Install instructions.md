@@ -9,7 +9,7 @@ If you want to be able to keep your user.js up-to-date with this repository, you
 cd ~/.mozilla/firefox
 git clone 'https://raw.githubusercontent.com/CHEF-KOCH/FFCK/master/user.js'
 cd XXXXXXXX.your_profile_name
-ln -s ../user.js/user.js user.js
+ln -s ../CHEF-KOCH/FFCK user.js
 ```
 
 
