@@ -339,7 +339,7 @@ user_pref("javascript.options.asmjs", false);
 user_pref("browser.autofocus", true);                         // [boolean] whether to auto-focus the address bar
 user_pref("browser.blink_allowed", false);                    // [boolean] whether to allow blinking elements - typically very annoying
 user_pref("browser.display.enable_marquee", false);           // [boolean] whether to allow animated marquee text
-user_pref("browser.zoom.full", false);                        // [boolean] true=zoom whole page, false=zoom text only
+//user_pref("browser.zoom.full", true);                        // [boolean] true=zoom whole page, false=zoom text only
 //user_pref("full-screen-api.pointer-lock.enabled", false);   // [boolean] locks pointer for web applications like first person view games, etc.
 user_pref("full-screen-api.warning.timeout", 0);              // [integer] how long to display the full-screen overlay/warning notice after entering full-screen (such as for video)
 user_pref("gfx.color_management.mode", 0);                    // [integer] whether to use embedded ICC color profiles in images to display them (requires a color calibrated monitor and correct color profile) - 0=disable, 1=enable, 2=enabled only on tagged
