@@ -469,8 +469,7 @@ user_pref("devtools.webide.enabled", false);
 //////////////////////////////////
 
 /*
-    --- smooth scrolling tweak ---
-    these settings provide silky-smooth scrolling that dynamically adjusts according to mouse wheel speed
+    These settings provide silky-smooth scrolling that dynamically adjusts according to mouse wheel speed!
 */
 user_pref("general.smoothScroll", true);                            // [boolean] enable/disable smooth scrolling
 user_pref("general.smoothScroll.lines", true);                      // [boolean] enable/disable smooth line scrolling (up/down arrow/page keys)
