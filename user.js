@@ -1,15 +1,3 @@
-    [][][][][]  []  [][][][] [][][][][] [][][][][]  [][][][][]  []       []
-    []              [][]  [] []         []          []      []    []   []
-    [][][]      []  [][]  [] [][][]     [][][]      []      []      []
-    []          []  []  []   []         []          []      []    []   []
-    []          []  []    [] [][][][][] []          [][][][][]  []       [] about:config
-     
-    Firefox About:Config Tricks & Hardening (based on kb.mozillazine.org, 12bytes.org & user.js project)
-    
-    Speed up and secure your Firefox based on Firefox v48.x.x
-    Several tweaks required for this!
-    ==== introduced by CHEF-KOCH ==== 
-
 ////////////////////////////////
 //// === LINUX SPECIFIC === ////
 ////////////////////////////////
@@ -272,7 +260,7 @@ user_pref("browser.casting.enabled", false);              // [boolean] whether t
 user_pref("gfx.layerscope.enabled", false);
 user_pref("network.allow-experiments", false);
 user_pref("network.cookie.cookieBehavior", 1);            // [integer] 0=allow all, 1=allow same host, 2=disallow all, 3= allow 3rd party if it has already set a cookie - should use Self Destructing Cookies
-user_pref("network.dnsCacheExpiration", 0);               // [intiger] how long to keep DNS entries - set to '0' to disable DNS caching - should probably only do this if you are caching DNS queries using another method, such as at the router or the OS level and, if so, disable DNS prefetching (network.dns.disablePrefetch)
+user_pref("network.dnsCacheExpiration", 0);               // [integer] how long to keep DNS entries - set to '0' to disable DNS caching - should probably only do this if you are caching DNS queries using another method, such as at the router or the OS level and, if so, disable DNS prefetching (network.dns.disablePrefetch)
 user_pref("network.dns.disablePrefetch", true);           // [boolean] disable nameserver lookups for sites not yet visited
 user_pref("network.dns.disablePrefetchFromHTTPS", true);  // [boolean] disable nameserver lookups for secure sites not yet visited
 user_pref("network.jar.open-unsafe-types", false);        // [boolean] whether to allow the opening of unsafe Java archives
@@ -283,7 +271,7 @@ user_pref("network.jar.open-unsafe-types", false);        // [boolean] whether t
 //user_pref("network.http.pipelining", true);               // [boolean] whether to attempt to use a single HTP 1.1 connection for multiple requests - can speed up loading or pages, or break them
 //user_pref("network.http.referer.spoofSource", false);     // [boolean] false=send real referrer, true=spoof referrer (use target URI as referrer) - this pref should be controlled by other means on a per-site basis, such as uMatrix
 //user_pref("network.http.referer.trimmingPolicy", 0);      // [integer] 0=send full URI, 1=scheme+host+port+path, 2=scheme+host+port
-//user_pref("network.http.referer.XOriginPolicy", 1);       // [integer] 0=always send, 1=send if base domains match, 2=send if hosts match - network.http.referer.spoofSource and network.http.referer.trimmingPolicy are dependant upon this setting
+//user_pref("network.http.referer.XOriginPolicy", 1);       // [integer] 0=always send, 1=send if base domains match, 2=send if hosts match - network.http.referer.spoofSource and network.http.referer.trimmingPolicy are dependent upon this setting
 //user_pref("network.http.sendRefererHeader", 1);           // [integer] 0=never, 1=send when links are clicked 2=send when links or images are clicked - this pref should be controlled by other means on a per-site basis, such as uMatrix
 //user_pref("network.http.sendSecureXSiteReferrer", true);  // [boolean] whether to send referrer from a secure site - not sure if this can be controlled by uMatrix
 user_pref("network.http.spdy.enabled", false);              // [boolean] SPDY is developed by Google for optimizing HTTP/1 web traffic - will be depreciated in 2016 - possible security issues
@@ -438,7 +426,7 @@ user_pref("browser.startup.homepage", "http://12bytes.org");        // [string] 
 user_pref("browser.startup.page", 3);                               // [integer] page to display on startup - 1=home, 2=blank, 3=restore last session
 user_pref("browser.triple_click_selects_paragraph", false);         // [boolean] whether to select paragraphs when triple clicked
 user_pref("browser.urlbar.clickSelectsAll", true);                  // [boolean] whether clicking the address bar will select the entire address
-user_pref("browser.urlbar.doubleClickSelectsAll", false);        // [boolean] whether to select the whole address string when double clicking in the address bar
+user_pref("browser.urlbar.doubleClickSelectsAll", false);        	// [boolean] whether to select the whole address string when double clicking in the address bar
 user_pref("browser.urlbar.filter.javascript", true);                // [boolean] whether to display JavaScript in browser history URLs'
 user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.urlbar.trimURLs", false);                        // [boolean] whether to strip prefix (http://) from URLs in URL bar
