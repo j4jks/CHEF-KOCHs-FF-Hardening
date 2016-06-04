@@ -3,14 +3,14 @@ Linux
 
 Drop the hardened user.js file into your Firefox profile directory at <code>~/.mozilla/firefox/XXXXXXXX.your_profile_name</code> and verify that the settings are effective from about:support (check the "Important Modified Preferences" and "user.js Preferences" sections).
 
-If you want to be able to keep your user.js up-to-date with this repository, you can clone the latter in the main mozilla directory and create a link to the user.js file from your profile:
+If you want to be able to keep your user.js up-to-date with this repository, you can clone the latter in the main Mozilla directory and create a link to the user.js file from your profile:
 
-<code>
+```bash
 cd ~/.mozilla/firefox
 git clone 'https://raw.githubusercontent.com/CHEF-KOCH/FFCK/master/user.js'
 cd XXXXXXXX.your_profile_name
 ln -s ../user.js/user.js user.js
-</code>
+```
 
 
 Android
