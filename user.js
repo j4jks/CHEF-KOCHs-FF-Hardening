@@ -422,7 +422,7 @@ user_pref("browser.slowStartup.notificationDisabled", true);
 user_pref("browser.slowStartup.maxSamples", 0);
 user_pref("browser.slowStartup.samples", 0);
 user_pref("browser.startup.homepage_override.mstone", "ignore");
-user_pref("browser.startup.homepage", "http://12bytes.org");        // [string] page to display when clicking the Home button
+user_pref("browser.startup.homepage", "https://duckduckgo.com/");        // [string] page to display when clicking the Home button
 user_pref("browser.startup.page", 3);                               // [integer] page to display on startup - 1=home, 2=blank, 3=restore last session
 user_pref("browser.triple_click_selects_paragraph", false);         // [boolean] whether to select paragraphs when triple clicked
 user_pref("browser.urlbar.clickSelectsAll", true);                  // [boolean] whether clicking the address bar will select the entire address
