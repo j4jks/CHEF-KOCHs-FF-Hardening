@@ -14,7 +14,7 @@ user_pref("network.protocol-handler.warn-external.apt+http", true);
 //// === CACHE === ////
 ///////////////////////
 
-user_pref("browser.sessionhistory.max_total_viewers", 5);   // [integer] how many pages to store in memory - used when moving back/forward in history - -1=auto-determine based on available memory
+user_pref("browser.sessionhistory.max_total_viewers", 5);		// [integer] how many pages to store in memory - used when moving back/forward in history - -1=auto-determine based on available memory
 /*
     These settings will disable disk caching and store all cached objects in RAM - recommended as long as you don't mind the cache getting dumped at reboot or when Firefox is restarted
 */
@@ -446,7 +446,7 @@ user_pref("nglayout.enable_drag_images", false);                    // [boolean]
 user_pref("reader.enabled", false);                                 // [boolean] whether to enable the Reader View functionality (this pref to be introduced sometime after v38.0.5)
 user_pref("reader.parse-on-load.enabled", false);                   // [boolean] presumably whether to build a "Reader View" version of the page when it is loaded
 user_pref("startup.homepage_welcome_url", "");
-user_pref("startup.homepage_welcome_url.additional", "")			// [integer] Disables the UI Welcome stuff in ESR/FF on first startup
+user_pref("startup.homepage_welcome_url.additional", "");			// [integer] Disables the UI Welcome stuff in ESR/FF on first startup
 user_pref("startup.homepage_override_url", "");						// [integer] 
 user_pref("ui.submenuDelay", 150);                                  // [integer] delay in ms before a sub-menu of a context menu is displayed
 user_pref("view_source.tab", false);                                // [boolean] whether to view web page source code in a tab or a window which offers more options
