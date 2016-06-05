@@ -14,7 +14,7 @@ user_pref("network.protocol-handler.warn-external.apt+http", true);
 //// === CACHE === ////
 ///////////////////////
 
-user_pref("browser.sessionhistory.max_total_viewers", 5);		// [integer] how many pages to store in memory - used when moving back/forward in history - -1=auto-determine based on available memory
+user_pref("browser.sessionhistory.max_total_viewers", 5);      // [integer] how many pages to store in memory - used when moving back/forward in history - -1=auto-determine based on available memory
 /*
     These settings will disable disk caching and store all cached objects in RAM - recommended as long as you don't mind the cache getting dumped at reboot or when Firefox is restarted
 */
@@ -270,13 +270,13 @@ user_pref("keyword.enabled", false);                    // [boolean] whether to 
 ////////////////////////////
 
 user_pref("browser.casting.enabled", false);              // [boolean] whether to send HTML5 video to other devices on the network
-user_pref("gfx.layerscope.enabled", false);
+//user_pref("gfx.layerscope.enabled", false);
 user_pref("network.allow-experiments", false);
 user_pref("network.cookie.cookieBehavior", 1);            // [integer] 0=allow all, 1=allow same host, 2=disallow all, 3= allow 3rd party if it has already set a cookie - should use Self Destructing Cookies
 user_pref("network.dnsCacheExpiration", 0);               // [integer] how long to keep DNS entries - set to '0' to disable DNS caching - should probably only do this if you are caching DNS queries using another method, such as at the router or the OS level and, if so, disable DNS prefetching (network.dns.disablePrefetch)
 user_pref("network.dns.disablePrefetch", true);           // [boolean] disable nameserver lookups for sites not yet visited
 user_pref("network.dns.disablePrefetchFromHTTPS", true);  // [boolean] disable nameserver lookups for secure sites not yet visited
-user_pref("network.jar.open-unsafe-types", false);        // [boolean] whether to allow the opening of unsafe Java archives
+//user_pref("network.jar.open-unsafe-types", false);        // [boolean] whether to allow the opening of unsafe Java archives
 /*
     --- referrer settings ---
     referrer is best controlled by an add-on, such as uMatrix
@@ -343,7 +343,7 @@ user_pref("dom.vr.oculus.enabled", false);
 user_pref("dom.vr.oculus050.enabled", false);
 user_pref("dom.w3c_touch_events.enabled", 0);
 user_pref("javascript.options.asmjs", false);
-user_pref("dom.mozTCPSocket.enabled", false);                               // [boolean] on ESR versions only, TCPSocket is not used
+user_pref("dom.mozTCPSocket.enabled", false);                               // [boolean] on ESR versions only, TCPSocket is not really been used
 user_pref("dom.push.serverURL", "");                                        // [integer] Disables DOM Push additional URL
 
 /////////////////////////////////////////////////
@@ -437,7 +437,7 @@ user_pref("browser.slowStartup.notificationDisabled", true);
 user_pref("browser.slowStartup.maxSamples", 0);
 user_pref("browser.slowStartup.samples", 0);
 user_pref("browser.startup.homepage_override.mstone", "ignore");
-user_pref("browser.startup.homepage", "https://duckduckgo.com/");        // [string] page to display when clicking the Home button
+user_pref("browser.startup.homepage", "https://duckduckgo.com/");   // [string] page to display when clicking the Home button
 user_pref("browser.startup.page", 3);                               // [integer] page to display on startup - 1=home, 2=blank, 3=restore last session
 user_pref("browser.triple_click_selects_paragraph", false);         // [boolean] whether to select paragraphs when triple clicked
 user_pref("browser.urlbar.clickSelectsAll", true);                  // [boolean] whether clicking the address bar will select the entire address
