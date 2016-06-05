@@ -46,6 +46,19 @@ user_pref("privacy.clearOnShutdown.offlineApps", true);        // [boolean] whet
 //user_pref("privacy.clearOnShutdown.sessions", true);         // [boolean] whether to clear active logins on shutdown
 //user_pref("privacy.clearOnShutdown.siteSettings", true);     // [boolean] whether to clear site-specific settings on shutdown
 
+////////////////////////
+//// === Volume === ////
+///////////////////////
+
+/*
+    --- Hardware Volume + Fingerprints ---
+    Reduce and manage the attack surface of audio based fingerprints.
+	Read: https://www.w3.org/TR/webaudio/
+*/
+
+//user_pref("media.default_volume", 0.2); 						// [string] 0.1 = 10% volume on HTML5 Videos -> 1.0 = 100%
+
+
 //////////////////////////
 //// === UPDATING === ////
 //////////////////////////
