@@ -1,3 +1,24 @@
+///////////////////////////////////
+//// === Palemoon SPECIFIC === ////
+//////////////////////////////////
+
+/*
+     Full list maintained by Moonchild: https://forum.palemoon.org/viewtopic.php?f=24&t=3357
+     If you have issues or questions about any of these, please use the palemoon forums ***/
+*/
+// 3201: (v25.6+) disable canvas fingerprinting
+   // user_pref("canvas.poisondata", true);
+// 3202: (v25.2+) control HSTS
+   // If editing this in about:config PM needs to be fully closed and then restarted
+   // NOTE: This is a trade-off between privacy vs security. HSTS was designed to increase
+   // security to stop MiTM attacks but can also be misused as a fingerprinting vector, by
+   // scrapping previously visited sites. Recommended: security over privacy. Your choice.
+   // user_pref("network.stricttransportsecurity.enabled", true);
+// 3203: (v25.0+) controls whether to ignore an expired state of stapled OCSP responses
+   // If set to true, breaks with RFC6066 (like Firefox) and ignores the fact that stapled
+   // OCSP responses may be expired. If false (the default) aborts the connection.
+   // user_pref("security.ssl.allow_unsafe_ocsp_response", false);
+
 ////////////////////////////////
 //// === LINUX SPECIFIC === ////
 ////////////////////////////////
@@ -181,7 +202,6 @@ user_pref("media.getusermedia.agc_enabled", true);                 // [boolean] 
 user_pref("beacon.enabled", false);                                // [boolean] whether to send additional analytics to web servers
 user_pref("breakpad.reportURL", "");
 user_pref("browser.aboutHomeSnippets.updateUrl", "");
-//user_pref("browser.display.use_document_fonts", 0);              // [integer] whether to allow web pages to use their own fonts - allowing this (1) is a privacy issue because of browser fingerprinting, however not allowing (0) this will make a lot of sites quite ugly (garbled characters)
 user_pref("browser.helperApps.deleteTempFileOnExit", true);
 //user_pref("browser.history.allowPopState", false);               // [boolean] whether to allow web sites to manipulate browser history - 'false' breaks some web sites when navigating within them, such as YouTube
 //user_pref("browser.history.allowPushState", false);              // [boolean] whether to allow HTML5 web sites to add entries to the browser history - 'false' breaks some web sites when navigating within them, such as YouTube
@@ -354,13 +374,21 @@ user_pref("dom.vr.enabled", false);                                         // [
 user_pref("dom.vr.oculus.enabled", false);
 user_pref("dom.vr.oculus050.enabled", false);
 user_pref("dom.w3c_touch_events.enabled", 0);
+user_pref("dom.workers.sharedWorkers.enabled", false);
+//user_pref("full-screen-api.enabled", false);
 //user_pref("mathml.disabled", true);                                       // [boolean] only on TBB
 user_pref("javascript.options.asmjs", false);
 user_pref("javascript.options.typeinference", false);
 user_pref("javascript.options.baselinejit.content", false);
 user_pref("javascript.options.ion.content", false);
 user_pref("dom.mozTCPSocket.enabled", false);                               // [boolean] on ESR versions only, TCPSocket is not really been used
-user_pref("dom.push.serverURL", "");                                        // [integer] Disables DOM Push additional URL
+user_pref("dom.push.userAgentID", "");
+user_pref("dom.push.serverURL", "");                                        // [integer] disables DOM Push additional URL
+user_pref("dom.push.udp.wakeupEnabled", false);
+user_pref("dom.push.connection.enabled", false);
+user_pref("dom.push.enabled", false);                                       // [boolean] disables dom push (push API)
+user_pref("dom.webnotifications.enabled", false);
+user_pref("dom.webnotifications.serviceworker.enabled", false);
 
 /////////////////////////////////////////////////
 //// === WEBSITE APPERANCE/FUNCTIONALITY === ////
@@ -374,8 +402,6 @@ user_pref("browser.display.enable_marquee", false);           // [boolean] wheth
 //user_pref("full-screen-api.pointer-lock.enabled", false);   // [boolean] locks pointer for web applications like first person view games, etc.
 user_pref("full-screen-api.warning.timeout", 0);              // [integer] how long to display the full-screen overlay/warning notice after entering full-screen (such as for video)
 user_pref("gfx.color_management.mode", 0);                    // [integer] whether to use embedded ICC color profiles in images to display them (requires a color calibrated monitor and correct color profile) - 0=disable, 1=enable, 2=enabled only on tagged
-//user_pref("gfx.downloadable_fonts.enabled", false);         // [boolean] whether to allow downloading of fonts (Google web-fonts, etc.) - too many missing characters on pages with this disabled - better controlled with uBlock on a per-site basis
-//user_pref("gfx.font_rendering.opentype_svg.enabled", true); // [boolean] whether to allow SVG inside fonts - at this point i cannot see any reason not to
 user_pref("image.animation_mode", "once");                    // [string] how to display animated images: "none"=don't animate, "once"=allow to loop only once, "normal"=allow infinite looping
 //user_pref("svg.in-content.enabled", false);                 // [boolean] may breaks pages but svg is to useful - only TBB
 user_pref("layout.css.devPixelsPerPx", "1.1");                // [string] set the default zoom level for the entire browser and content (def = -1.0)
@@ -389,6 +415,20 @@ user_pref("media.block-play-until-visible", true);            // [boolean] wheth
 user_pref("extensions.blocklist.enabled", false);                    // [boolean] whether to download list of black-listed extensions, vulnerable plugins, crash-prone graphic drivers
 user_pref("extensions.getAddons.cache.enabled", false);              // [boolean] whether to check daily for extension metadata updates (description, ratings, etc.) when clicking the "more" link on the Add-ons panel - also seems to block remote icons for extensions in the Add-ons panel
 user_pref("extensions.webservice.discoverURL", "http://127.0.0.1");  // [string] disable downloading list of featured extensions for displaying in Get Add-ons panel
+
+////////////////////////
+//// === Fonts === ////
+///////////////////////
+
+//user_pref("browser.display.use_document_fonts", 0);                // [integer] whether to allow web pages to use their own fonts - allowing this (1) is a privacy issue because of browser fingerprinting, however not allowing (0) this will make a lot of sites quite ugly (garbled characters)
+//user_pref("gfx.downloadable_fonts.enabled", false);                // [boolean] whether to allow downloading of fonts (Google web-fonts, etc.) - too many missing characters on pages with this disabled - better controlled with uBlock on a per-site basis
+//user_pref("gfx.font_rendering.opentype_svg.enabled", true);        // [boolean] whether to allow SVG inside fonts - at this point i cannot see any reason not to
+user_pref("font.name.serif.x-unicode", "Georgia");
+user_pref("font.name.serif.x-western", "Georgia");                   // [string] default Times New Roman
+user_pref("font.name.sans-serif.x-unicode", "Arial");
+user_pref("font.name.sans-serif.x-western", "Arial");                // [string] default Arial
+user_pref("font.name.monospace.x-unicode", "Lucida Console");
+user_pref("font.name.monospace.x-western", "Lucida Console");        // [string] default Courier New
 
 /////////////////////////
 //// === PLUGINS === ////
@@ -415,7 +455,9 @@ user_pref("plugin.scan.WindowsMediaPlayer", 99999);             // [integer] whe
 //// === TABS === ////
 //////////////////////
 
+user_pref("browser.pagethumbnails.capturing_disabled", true);   // [boolean] disables the ability to capture page thumbnails
 user_pref("pageThumbs.enabled", false);                         // [boolean] theoretically lowers attack surface by hiding the page thumbnails
+//user_pref("browser.pagethumbnails.storage_version", 3);       // [string] ???
 user_pref("accessibility.tabfocus", 3);                         // [integer] 3: Tab key focuses text fields and all other form elements
 user_pref("browser.newtab.url", "about:blank");                 // [string] "about:blank"=show a completely blank tab when opening new tabs
 user_pref("browser.link.open_newwindow", 1);                    // [integer] controls when a new window/tab should be opened - 1=open links that open in a new window in the current tab, 2=open links that open in a new window in a new window, 3=open links that open in a new window in a new tab in the current window
@@ -465,6 +507,8 @@ user_pref("browser.urlbar.filter.javascript", true);                // [boolean]
 user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.urlbar.trimURLs", false);                        // [boolean] whether to strip prefix (http://) from URLs in URL bar
 user_pref("browser.urlbar.userMadeSearchSuggestionsChoice", true);
+user_pref("browser.feeds.showFirstRunUI", false);
+user_pref("browser.shell.checkDefaultBrowser", false);
 user_pref("browser.usedOnWindows10.introURL", "");
 user_pref("full-screen-api.warning.delay", 0);
 user_pref("full-screen-api.warning.timeout", 0);
