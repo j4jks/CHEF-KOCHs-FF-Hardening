@@ -57,7 +57,7 @@ user_pref("privacy.clearOnShutdown.offlineApps", true);        // [boolean] whet
 */
 
 //user_pref("media.default_volume", 0.2);                      // [string] 0.1 = 10% volume on HTML5 Videos -> 1.0 = 100%
-
+//user_pref("media.webaudio.enabled", false);                  // [boolean] ??
 
 //////////////////////////
 //// === UPDATING === ////
@@ -88,6 +88,7 @@ user_pref("extensions.blocklist.url", "");                  // [string] url from
 user_pref("media.gmp-manager.url", "");                                             // [string] OpenH.264 plugin update URL - set to blank to disable update checking
 user_pref("plugins.update.notifyUser", false);                                      // [boolean] whether to check for plugin updates - this may not cover the OpenH264 plugin
 user_pref("plugins.update.url", "https://www.mozilla.org/%LOCALE%/plugincheck/");   // [string] remove utm tracking params from plugin update check URL - if "" you can't check for updates manually
+//user_pref("plugins.hide_infobar_for_outdated_plugin", false);                     // [boolean] enable the Information Bar for outdated plugins (if any installed)
 /*
     --- misc. updates ---
 */
@@ -137,7 +138,7 @@ user_pref("toolkit.telemetry.unifiedIsOptIn", true);    // [boolean] makes telem
 user_pref("browser.search.geoip.url", "");           // [string] disable contacting Mozilla to set the default search engine
 //user_pref("geo.enabled", false);                   // [boolean] whether to enable geo-location - not strictly necessary to disable since user should be prompted before location data is allowed to be sent
 //user_pref("geo.wifi.uri", "http://127.0.0.1");
-user_pref("geo.wifi.logging.enabled", false);
+user_pref("geo.wifi.logging.enabled", false);        // [boolean] disables the wifi logging feature
 /*
     WebGL
 */
@@ -176,6 +177,7 @@ user_pref("media.getusermedia.agc_enabled", true);                 // [boolean] 
 /*
     MISC
 */
+//user_pref("offline-apps.allow_by_default", false);               // [boolean] whether to allow offline apps or no 
 user_pref("beacon.enabled", false);                                // [boolean] whether to send additional analytics to web servers
 user_pref("breakpad.reportURL", "");
 user_pref("browser.aboutHomeSnippets.updateUrl", "");
@@ -188,16 +190,18 @@ user_pref("browser.selfsupport.url", "");                          // [string] d
 user_pref("browser.send_pings", false);                            // [boolean] whether to allow HTML5 ping tracking when clicking a link
 user_pref("browser.send_pings.require_same_host", true);           // [boolean] whether to require the same host if sending pings
 user_pref("browser.urlbar.unifiedcomplete", false);
+user_pref("browser.formfill.enable", false);                       // [boolean] disables automatically formfill, you can sue KeePass or others which are working offline
 user_pref("device.sensors.enabled", false);
 user_pref("experiments.activeExperiment", false);
 user_pref("experiments.enabled", false);
 user_pref("experiments.manifest.uri", "");
 user_pref("experiments.supported", false);
 user_pref("gecko.buildID", 20100101);                               // [string] browser build ID - value taken ToR browser
+user_pref("media.gmp-manager.buildID", "20000101000000");           // ^^
 user_pref("general.useragent.compatMode.firefox", false);           // [boolean] whether to append a special compatibility token to the user-agent string - could potentially be used for fingerprinting and should not be necessary for average user
 //user_pref("general.useragent.override", "");                      // [string] HTTP User-Agent string - should be set randomly with something like uMatrix
 //user_pref("gfx.downloadable_fonts.enabled", true);                // [boolean] whether to allow font downloads
-user_pref("privacy.donottrackheader.enabled", false);               // [boolean] whether to enable the "do not track" header - essentially useless
+//user_pref("privacy.donottrackheader.enabled", false);               // [boolean] whether to enable the "do not track" header - essentially useless
 user_pref("privacy.trackingprotection.enabled", false);             // [boolean] whether to enable tracking protection (see: browser.polaris.enabled) - not needed if using other means, such as uBlock - when enabled, a new icon in address bar will appear when a site is being blocked, allowing to disable per domain - note that enabling this allows the download of a list from Mozilla
 user_pref("browser.trackingprotection.gethashURL", "");
 user_pref("browser.trackingprotection.getupdateURL", "");
@@ -260,6 +264,9 @@ user_pref("browser.download.useDownloadDir", false);                    // [bool
 //// === SEARCH === ////
 ////////////////////////
 
+user_pref("browser.search.countryCode", "US");          // [string] set the default language to US
+user_pref("browser.search.region", "US")
+user_pref("intl.accept_languages", "en-US, en");        // [string] default but we want to force it to be used in case you downloaded lang specific builds
 user_pref("browser.search.param.yahoo-fr", "");         // [string] remove tracking parameter
 user_pref("browser.search.param.yahoo-fr-ja", "");      // [string] remove tracking parameter
 user_pref("browser.search.suggest.enabled", false);     // [boolean] whether to enable search suggestions for search bar
@@ -269,6 +276,9 @@ user_pref("keyword.enabled", false);                    // [boolean] whether to 
 //// === NETWORKING === ////
 ////////////////////////////
 
+//user_pref("network.jar.block-remote-files", true);                      // [boolean] blocks external remote .jar files
+//user_pref("network.negotiate-auth.allow-proxies", false);              // [boolean] internal proxy hardening
+//user_pref("network.automatic-ntlm-auth.allow-proxies", false);         // [boolean] disallow some types of insecure proxies 
 user_pref("browser.casting.enabled", false);              // [boolean] whether to send HTML5 video to other devices on the network
 //user_pref("gfx.layerscope.enabled", false);
 user_pref("network.allow-experiments", false);
@@ -301,6 +311,8 @@ user_pref("network.proxy.socks_remote_dns", true);          // [boolean] true=ha
 //// === DOM (mostly JAVASCRIPT) === ////
 /////////////////////////////////////////
 
+user_pref("dom.keyboardevent.code.enabled", false);                         // https://bugzilla.mozilla.org/show_bug.cgi?id=865649
+user_pref("dom.workers.websocket.enabled", false);                          // [boolean] whether to allow websocket or not
 user_pref("dom.allow_cut_copy", false);                                     // [boolean] whether to allow JS to manipulate clipboard data (requires user intervention, like clicking a button)
 user_pref("dom.allow_scripts_to_close_windows", false);
 user_pref("dom.battery.enabled", false);                                    // [boolean] whether to allow JS to access battery info - potential privacy issue
@@ -342,7 +354,11 @@ user_pref("dom.vr.enabled", false);                                         // [
 user_pref("dom.vr.oculus.enabled", false);
 user_pref("dom.vr.oculus050.enabled", false);
 user_pref("dom.w3c_touch_events.enabled", 0);
+//user_pref("mathml.disabled", true);                                       // [boolean] only on TBB
 user_pref("javascript.options.asmjs", false);
+user_pref("javascript.options.typeinference", false);
+user_pref("javascript.options.baselinejit.content", false);
+user_pref("javascript.options.ion.content", false);
 user_pref("dom.mozTCPSocket.enabled", false);                               // [boolean] on ESR versions only, TCPSocket is not really been used
 user_pref("dom.push.serverURL", "");                                        // [integer] Disables DOM Push additional URL
 
@@ -361,6 +377,7 @@ user_pref("gfx.color_management.mode", 0);                    // [integer] wheth
 //user_pref("gfx.downloadable_fonts.enabled", false);         // [boolean] whether to allow downloading of fonts (Google web-fonts, etc.) - too many missing characters on pages with this disabled - better controlled with uBlock on a per-site basis
 //user_pref("gfx.font_rendering.opentype_svg.enabled", true); // [boolean] whether to allow SVG inside fonts - at this point i cannot see any reason not to
 user_pref("image.animation_mode", "once");                    // [string] how to display animated images: "none"=don't animate, "once"=allow to loop only once, "normal"=allow infinite looping
+//user_pref("svg.in-content.enabled", false);                 // [boolean] may breaks pages but svg is to useful - only TBB
 user_pref("layout.css.devPixelsPerPx", "1.1");                // [string] set the default zoom level for the entire browser and content (def = -1.0)
 user_pref("media.autoplay.enabled", true);                    // [boolean] whether to allow auto-play of embedded media - setting to false apparently can cause some videos to not play, including 1st or 3rd party Vimeo videos, and may also necesitate having to click the play button twice
 user_pref("media.block-play-until-visible", true);            // [boolean] whether to play media in a tab that does not have focus - note that once it starts playing, changing tabs will not stop it
@@ -398,6 +415,7 @@ user_pref("plugin.scan.WindowsMediaPlayer", 99999);             // [integer] whe
 //// === TABS === ////
 //////////////////////
 
+user_pref("pageThumbs.enabled", false);                         // [boolean] theoretically lowers attack surface by hiding the page thumbnails
 user_pref("accessibility.tabfocus", 3);                         // [integer] 3: Tab key focuses text fields and all other form elements
 user_pref("browser.newtab.url", "about:blank");                 // [string] "about:blank"=show a completely blank tab when opening new tabs
 user_pref("browser.link.open_newwindow", 1);                    // [integer] controls when a new window/tab should be opened - 1=open links that open in a new window in the current tab, 2=open links that open in a new window in a new window, 3=open links that open in a new window in a new tab in the current window
@@ -437,6 +455,7 @@ user_pref("browser.slowStartup.notificationDisabled", true);
 user_pref("browser.slowStartup.maxSamples", 0);
 user_pref("browser.slowStartup.samples", 0);
 user_pref("browser.startup.homepage_override.mstone", "ignore");
+user_pref("browser.startup.homepage_override.buildID", "20000101000000");   // [string] Tor settings
 user_pref("browser.startup.homepage", "https://duckduckgo.com/");   // [string] page to display when clicking the Home button
 user_pref("browser.startup.page", 3);                               // [integer] page to display on startup - 1=home, 2=blank, 3=restore last session
 user_pref("browser.triple_click_selects_paragraph", false);         // [boolean] whether to select paragraphs when triple clicked
@@ -506,3 +525,4 @@ user_pref("mousewheel.acceleration.factor", 10);                    // [integer]
 user_pref("mousewheel.acceleration.start", 0);                      // [integer] when to apply mouse wheel.acceleration.factor (after how many scroll clicks of mouse wheel) - value must be greater than -1
 user_pref("mousewheel.default.delta_multiplier_y", 85);             // [integer] sets the vertical step size
 //user_pref("mousewheel.min_line_scroll_amount", 1);                // [integer] how many lines to scroll with mouse wheel (approx.) - doesn't seem to have any affect
+
