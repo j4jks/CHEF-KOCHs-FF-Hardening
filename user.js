@@ -3,8 +3,8 @@
 //////////////////////////////////
 
 /*
-     Full list maintained by Moonchild: https://forum.palemoon.org/viewtopic.php?f=24&t=3357
-     If you have issues or questions about any of these, please use the palemoon forums !!
+    Full list maintained by Moonchild: https://forum.palemoon.org/viewtopic.php?f=24&t=3357
+    If you have issues or questions about any of these, please use the Palemoon forums !!
 */
 // 3201: (v25.6+) disable canvas fingerprinting
    // user_pref("canvas.poisondata", true);
@@ -46,7 +46,7 @@ user_pref("browser.cache.memory.enable", true);                // [boolean] whet
 user_pref("browser.sessionstore.privacy_level", 2);            // [integer] 0=Store all extra session data, 1=Store extra session data for non-HTTPS sites, 2=Never store extra session data - contents of forms, scrollbar positions, cookies, and POST data
 user_pref("browser.sessionstore.privacy_level_deferred", 2);   // [integer] presumably same as above except for non-focused tabs
 /*
-    clear objects on shutdown and set preferences for manual history deletion
+    Clear objects on shutdown and set preferences for manual history deletion
 */
 user_pref("privacy.cpd.cache", true);                          // [boolean] whether to preselect the option to clear browser cache when manually clearing history
 user_pref("privacy.cpd.cookies", true);                        // [boolean] whether to preselect the option to clear cookies when manually clearing history
@@ -179,6 +179,7 @@ user_pref("media.peerconnection.turn.disable", true);
 user_pref("media.peerconnection.video.enabled", false);
 /*
     EME (Adobe "Primetime Content Decryption Module" DRM)
+	ESR Versions of FF and Tor/TBB versions excluding EME/DRM!
 */
 user_pref("browser.eme.ui.enabled", false);
 user_pref("media.gmp-eme-adobe.enabled", false);
@@ -306,7 +307,7 @@ user_pref("network.cookie.cookieBehavior", 1);            // [integer] 0=allow a
 user_pref("network.dnsCacheExpiration", 0);               // [integer] how long to keep DNS entries - set to '0' to disable DNS caching - should probably only do this if you are caching DNS queries using another method, such as at the router or the OS level and, if so, disable DNS prefetching (network.dns.disablePrefetch)
 user_pref("network.dns.disablePrefetch", true);           // [boolean] disable nameserver lookups for sites not yet visited
 user_pref("network.dns.disablePrefetchFromHTTPS", true);  // [boolean] disable nameserver lookups for secure sites not yet visited
-//user_pref("network.jar.open-unsafe-types", false);        // [boolean] whether to allow the opening of unsafe Java archives
+//user_pref("network.jar.open-unsafe-types", false);      // [boolean] whether to allow the opening of unsafe Java archives
 /*
     --- referrer settings ---
     referrer is best controlled by an add-on, such as uMatrix
@@ -331,7 +332,7 @@ user_pref("network.proxy.socks_remote_dns", true);          // [boolean] true=ha
 //// === DOM (mostly JAVASCRIPT) === ////
 /////////////////////////////////////////
 
-user_pref("dom.keyboardevent.code.enabled", false);                         // https://bugzilla.mozilla.org/show_bug.cgi?id=865649
+user_pref("dom.keyboardevent.code.enabled", false);                         // [boolean] see: https://bugzilla.mozilla.org/show_bug.cgi?id=865649
 user_pref("dom.workers.websocket.enabled", false);                          // [boolean] whether to allow websocket or not
 user_pref("dom.allow_cut_copy", false);                                     // [boolean] whether to allow JS to manipulate clipboard data (requires user intervention, like clicking a button)
 user_pref("dom.allow_scripts_to_close_windows", false);
