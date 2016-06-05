@@ -53,10 +53,10 @@ user_pref("privacy.clearOnShutdown.offlineApps", true);        // [boolean] whet
 /*
     --- Hardware Volume + Fingerprints ---
     Reduce and manage the attack surface of audio based fingerprints.
-	Read: https://www.w3.org/TR/webaudio/
+    Read: https://www.w3.org/TR/webaudio/
 */
 
-//user_pref("media.default_volume", 0.2); 						// [string] 0.1 = 10% volume on HTML5 Videos -> 1.0 = 100%
+//user_pref("media.default_volume", 0.2);                      // [string] 0.1 = 10% volume on HTML5 Videos -> 1.0 = 100%
 
 
 //////////////////////////
@@ -65,7 +65,7 @@ user_pref("privacy.clearOnShutdown.offlineApps", true);        // [boolean] whet
 
 /*
     --- Program Updates ---
-    I suggest to disallow any automatic updating - you should always read the changelogs and then decide what to do since features may have been added that you absolutely do not want, or features removed that you do want. if yo choose to use an old build, i would suggest using the ESR releases: https://www.mozilla.org/en-US/firefox/organizations/faq/
+    I suggest to disallow any automatic updating - you should always read the changelogs and then decide what to do since features may have been added that you absolutely do not want, or features removed that you do want. if yo choose to use an old build, I would suggest using the ESR releases: https://www.mozilla.org/en-US/firefox/organizations/faq/
 */
 user_pref("app.update.enabled", false);                             // [boolean] whether to enable browser auto-updating
 user_pref("app.update.auto", false);                                // [boolean] auto-install updates - app.update.enabled must be enabled
@@ -142,7 +142,7 @@ user_pref("geo.wifi.logging.enabled", false);
     WebGL
 */
 user_pref("pdfjs.enableWebGL", false);
-user_pref("webgl.disabled", true);                // [boolean] whether to enable WebGL - potential security risk - can also be blocked with NoScript
+user_pref("webgl.disabled", true);                  // [boolean] whether to enable WebGL - potential security risk - can also be blocked with NoScript
 user_pref("webgl.disable-extensions", true);
 user_pref("webgl.min_capability_mode", true);
 /*
