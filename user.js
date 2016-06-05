@@ -76,7 +76,7 @@ user_pref("app.update.silent", false);                              // [boolean]
 user_pref("app.update.staging.enabled", false);                     // [boolean] presumably whether to allow background downloading of updates
 /*
     --- extension updates ---
-    i suggest to disallow any automatic updating for extensions and manually check for updates on a regular basis, reading the change logs carefully. th problem with automatic updates for extensions is that a developer can sell  popular extension to a marketing company that will add code to track use browsing habits, display ads, etc.. consider using Extension Defender t help guard against this and download extensions only from AMO
+    I suggest to disallow any automatic updating for extensions and manually check for updates on a regular basis, reading the change logs carefully. th problem with automatic updates for extensions is that a developer can sell  popular extension to a marketing company that will add code to track use browsing habits, display ads, etc.. consider using Extension Defender t help guard against this and download extensions only from AMO
 */
 user_pref("extensions.update.autoUpdateDefault", false);    // [boolean] whether to auto-install extension updates
 user_pref("extensions.update.enabled", false);              // [boolean] whether to auto-check for extension updates
@@ -150,7 +150,7 @@ user_pref("webgl.min_capability_mode", true);
 */
 user_pref("media.gmp-gmpopenh264.enabled", false);
 user_pref("media.gmp-manager.url", "");
-user_pref("media.peerconnection.enabled", false);                  // [boolean] whether to enable WebRTC - Real-Time Communications between peers for voice, video, file and desktop sharing, etc. - potential security/privacy risk - WebRTC can be controlled with HTTP UserAgaent cleaner
+user_pref("media.peerconnection.enabled", false);                      // [boolean] whether to enable WebRTC - Real-Time Communications between peers for voice, video, file and desktop sharing, etc. - potential security/privacy risk - WebRTC can be controlled with HTTP UserAgaent cleaner
 user_pref("media.peerconnection.ice.default_address_only", true);
 user_pref("media.peerconnection.identity.timeout", 1);
 user_pref("media.peerconnection.turn.disable", true);
@@ -168,11 +168,11 @@ user_pref("media.eme.apiVisible", false);
 user_pref("camera.control.autofocus_moving_callback.enabled", false);
 user_pref("camera.control.face_detection.enabled", false);
 user_pref("media.getusermedia.screensharing.allowed_domains", "");
-user_pref("media.getusermedia.screensharing.enabled", false);          // [boolean] whether to enable screen sharing - should not be strictly necessary to disallow this as user should be prompted before the connection is allowed
-user_pref("media.navigator.enabled", false);                           // [boolean] unsure, but it is part of WebRTC - see: media.peerconnection.enabled
+user_pref("media.getusermedia.screensharing.enabled", false);       // [boolean] whether to enable screen sharing - should not be strictly necessary to disallow this as user should be prompted before the connection is allowed
+user_pref("media.navigator.enabled", false);                       // [boolean] unsure, but it is part of WebRTC - see: media.peerconnection.enabled
 user_pref("media.video_stats.enabled", false);
-user_pref("media.webspeech.recognition.enable", false);                // [boolean] unknown, sounds like a potential privacy threat
-user_pref("media.getusermedia.agc_enabled", true);                     // [boolean] whether to enable Automatic Gain Control for audio
+user_pref("media.webspeech.recognition.enable", false);            // [boolean] unknown, sounds like a potential privacy threat
+user_pref("media.getusermedia.agc_enabled", true);                 // [boolean] whether to enable Automatic Gain Control for audio
 /*
     MISC
 */
@@ -343,8 +343,8 @@ user_pref("dom.vr.oculus.enabled", false);
 user_pref("dom.vr.oculus050.enabled", false);
 user_pref("dom.w3c_touch_events.enabled", 0);
 user_pref("javascript.options.asmjs", false);
-user_pref("dom.mozTCPSocket.enabled", false);								// [boolean] on ESR versions only, TCPSocket is not used
-user_pref("dom.push.serverURL", "");										// [integer] Disables DOM Push additional URL
+user_pref("dom.mozTCPSocket.enabled", false);                               // [boolean] on ESR versions only, TCPSocket is not used
+user_pref("dom.push.serverURL", "");                                        // [integer] Disables DOM Push additional URL
 
 /////////////////////////////////////////////////
 //// === WEBSITE APPERANCE/FUNCTIONALITY === ////
@@ -441,7 +441,7 @@ user_pref("browser.startup.homepage", "https://duckduckgo.com/");        // [str
 user_pref("browser.startup.page", 3);                               // [integer] page to display on startup - 1=home, 2=blank, 3=restore last session
 user_pref("browser.triple_click_selects_paragraph", false);         // [boolean] whether to select paragraphs when triple clicked
 user_pref("browser.urlbar.clickSelectsAll", true);                  // [boolean] whether clicking the address bar will select the entire address
-user_pref("browser.urlbar.doubleClickSelectsAll", false);        	// [boolean] whether to select the whole address string when double clicking in the address bar
+user_pref("browser.urlbar.doubleClickSelectsAll", false);           // [boolean] whether to select the whole address string when double clicking in the address bar
 user_pref("browser.urlbar.filter.javascript", true);                // [boolean] whether to display JavaScript in browser history URLs'
 user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.urlbar.trimURLs", false);                        // [boolean] whether to strip prefix (http://) from URLs in URL bar
@@ -459,12 +459,12 @@ user_pref("nglayout.enable_drag_images", false);                    // [boolean]
 user_pref("reader.enabled", false);                                 // [boolean] whether to enable the Reader View functionality (this pref to be introduced sometime after v38.0.5)
 user_pref("reader.parse-on-load.enabled", false);                   // [boolean] presumably whether to build a "Reader View" version of the page when it is loaded
 user_pref("startup.homepage_welcome_url", "");
-user_pref("startup.homepage_welcome_url.additional", "");			// [integer] Disables the UI Welcome stuff in ESR/FF on first startup
-user_pref("startup.homepage_override_url", "");						// [integer] 
+user_pref("startup.homepage_welcome_url.additional", "");           // [integer] Disables the UI Welcome stuff in ESR/FF on first startup
+user_pref("startup.homepage_override_url", "");                     // [integer] 
 user_pref("ui.submenuDelay", 150);                                  // [integer] delay in ms before a sub-menu of a context menu is displayed
 user_pref("view_source.tab", false);                                // [boolean] whether to view web page source code in a tab or a window which offers more options
-user_pref("browser.uitour.enabled", false);							// [boolean] Disable the UI tour at startup
-user_pref("browser.uitour.url", "");								// [integer] ^^
+user_pref("browser.uitour.enabled", false);                         // [boolean] Disable the UI tour at startup
+user_pref("browser.uitour.url", "");                                // [integer] ^^
 
 /*
     Pocket (3rd party service)
