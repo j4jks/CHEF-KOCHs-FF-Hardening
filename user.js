@@ -298,8 +298,8 @@ user_pref("keyword.enabled", false);                    // [boolean] whether to 
 ////////////////////////////
 
 //user_pref("network.jar.block-remote-files", true);                      // [boolean] blocks external remote .jar files
-//user_pref("network.negotiate-auth.allow-proxies", false);              // [boolean] internal proxy hardening
-//user_pref("network.automatic-ntlm-auth.allow-proxies", false);         // [boolean] disallow some types of insecure proxies 
+//user_pref("network.negotiate-auth.allow-proxies", false);               // [boolean] internal proxy hardening
+//user_pref("network.automatic-ntlm-auth.allow-proxies", false);          // [boolean] disallow some types of insecure proxies 
 user_pref("browser.casting.enabled", false);              // [boolean] whether to send HTML5 video to other devices on the network
 //user_pref("gfx.layerscope.enabled", false);
 user_pref("network.allow-experiments", false);
@@ -320,9 +320,9 @@ user_pref("network.dns.disablePrefetchFromHTTPS", true);  // [boolean] disable n
 //user_pref("network.http.sendSecureXSiteReferrer", true);  // [boolean] whether to send referrer from a secure site - not sure if this can be controlled by uMatrix
 user_pref("network.http.spdy.enabled", false);              // [boolean] SPDY is developed by Google for optimizing HTTP/1 web traffic - will be depreciated in 2016 - possible security issues
 user_pref("network.http.spdy.enabled.http2", false);        // [boolean] see network.http.spdy.enabled
-user_pref("network.http.spdy.enabled.v3", false);           // [boolean] see network.http.spdy.enabled
-user_pref("network.http.spdy.enabled.v3-1", false);         // [boolean] see network.http.spdy.enabled
-user_pref("network.http.speculative-parallel-limit", 0);    // [integer] number of connections to make to a server for sites not yet visited (predictive) such as when typing in the search bar, hovering ove links, etc. - max number of current global half open sockets allowable when starting a new speculative connection
+user_pref("network.http.spdy.enabled.v3", false);           // [boolean] ^^
+user_pref("network.http.spdy.enabled.v3-1", false);         // [boolean] ^^
+user_pref("network.http.speculative-parallel-limit", 0);    // [integer] number of connections to make to a server for sites not yet visited (predictive) such as when typing in the search bar, hovering over links, etc. - max number of current global half open sockets allowable when starting a new speculative connection
 user_pref("network.manage-offline-status", false);          // [boolean] whether to auto-detect connectivity and manage the option to work off-line - can be annoying
 user_pref("network.predictor.enabled", false);              // [boolean] similar to network.prefetch-next, whether to prefetch resources for sites not yet visited (this was named "network.seer.enabled")
 user_pref("network.prefetch-next", false);                  // [boolean] disable prefetching pages not yet visited
@@ -387,7 +387,7 @@ user_pref("dom.push.userAgentID", "");
 user_pref("dom.push.serverURL", "");                                        // [integer] disables DOM Push additional URL
 user_pref("dom.push.udp.wakeupEnabled", false);
 user_pref("dom.push.connection.enabled", false);
-user_pref("dom.push.enabled", false);                                       // [boolean] disables dom push (push API)
+user_pref("dom.push.enabled", false);                                       // [boolean] disables DOM push (Push API)
 user_pref("dom.webnotifications.enabled", false);
 user_pref("dom.webnotifications.serviceworker.enabled", false);
 
