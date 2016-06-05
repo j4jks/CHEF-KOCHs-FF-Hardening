@@ -4,7 +4,7 @@
 
 /*
      Full list maintained by Moonchild: https://forum.palemoon.org/viewtopic.php?f=24&t=3357
-     If you have issues or questions about any of these, please use the palemoon forums ***/
+     If you have issues or questions about any of these, please use the palemoon forums !!
 */
 // 3201: (v25.6+) disable canvas fingerprinting
    // user_pref("canvas.poisondata", true);
@@ -96,7 +96,7 @@ user_pref("app.update.showInstalledUI", true);                      // [boolean]
 user_pref("app.update.silent", false);                              // [boolean] whether to show update prompt - Dependant upon app.update.enabled
 user_pref("app.update.staging.enabled", false);                     // [boolean] presumably whether to allow background downloading of updates
 /*
-    --- extension updates ---
+    --- Extension Updates ---
     I suggest to disallow any automatic updating for extensions and manually check for updates on a regular basis, reading the change logs carefully. th problem with automatic updates for extensions is that a developer can sell  popular extension to a marketing company that will add code to track use browsing habits, display ads, etc.. consider using Extension Defender t help guard against this and download extensions only from AMO
 */
 user_pref("extensions.update.autoUpdateDefault", false);    // [boolean] whether to auto-install extension updates
@@ -111,7 +111,7 @@ user_pref("plugins.update.notifyUser", false);                                  
 user_pref("plugins.update.url", "https://www.mozilla.org/%LOCALE%/plugincheck/");   // [string] remove utm tracking params from plugin update check URL - if "" you can't check for updates manually
 //user_pref("plugins.hide_infobar_for_outdated_plugin", false);                     // [boolean] enable the Information Bar for outdated plugins (if any installed)
 /*
-    --- misc. updates ---
+    --- Misc. Updates ---
 */
 user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");  // [string] update URL for updating content in about:home page
 //user_pref("browser.startup.homepage_override.mstone", "ignore");      // [string] used to display browser update information - may want to uncomment this if using a proxy for anonymity
@@ -443,8 +443,8 @@ user_pref("plugins.click_to_play", true);                       // [boolean] whe
 user_pref("plugins.notifyMissingFlash", false);                 // [boolean] whether to notify if Flash is needed but not installed - URL bar will still indicate if Flash is missing
 user_pref("security.xpconnect.plugin.unrestricted", false);     // [boolean] whether to allow scripting of plugins by untrusted scripts
 /*
-    --- plugin scanning ---
-    these setting control whether Firefox should scan for 3rd party plugins.  setting these values to a version higher than exists prevents the scan
+    --- Plugin Scanning ---
+    These setting control whether Firefox should scan for 3rd party plugins.  setting these values to a version higher than exists prevents the scan
 */
 user_pref("plugin.scan.Acrobat", 99999);                        // [integer] whether to scan for Adobe Acrobar Reader
 user_pref("plugin.scan.plid.all", false);                       // [boolean] whether to scan the directories specified in the Windows registry for PLIDs - includes: RealPlayer, Next-Generation Java Plug-In, Adobe Flash
