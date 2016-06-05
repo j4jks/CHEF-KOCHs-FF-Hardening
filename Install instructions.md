@@ -23,3 +23,11 @@ Windows
 ========
 
 On Windows, you need to drop the user.js file to <code>%appdata%\Mozilla\Firefox\Profiles\XXXXXXXX.your_profile_name</code>.
+
+
+Resources
+========
+
+* https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data
+* https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-firefox-profiles
+
