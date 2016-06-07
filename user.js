@@ -43,6 +43,7 @@ user_pref("browser.cache.disk.enable", false);                 // [boolean] whet
 user_pref("browser.cache.disk_cache_ssl", false);              // [boolean] whether to cache documents viewed over a secure connection (https)
 //user_pref("browser.cache.memory.capacity", 256000);          // [integer] alloted RAM capacity in KB for both memory and disk cache in RAM - 256000 = 250 MB
 user_pref("browser.cache.memory.enable", true);                // [boolean] whether to enable memory cache
+//user_pref("browser.sessionstore.restore_on_demand", false);  // [boolean] tabs per sessions loading needs to be clicked (after recovery)
 user_pref("browser.sessionstore.privacy_level", 2);            // [integer] 0=Store all extra session data, 1=Store extra session data for non-HTTPS sites, 2=Never store extra session data - contents of forms, scrollbar positions, cookies, and POST data
 user_pref("browser.sessionstore.privacy_level_deferred", 2);   // [integer] presumably same as above except for non-focused tabs
 /*
