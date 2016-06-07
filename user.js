@@ -182,10 +182,10 @@ user_pref("media.peerconnection.video.enabled", false);
     EME (Adobe "Primetime Content Decryption Module" DRM)
 	ESR Versions of FF and Tor/TBB versions excluding EME/DRM!
 */
-user_pref("browser.eme.ui.enabled", false);
-user_pref("media.gmp-eme-adobe.enabled", false);
-user_pref("media.eme.enabled", false);
-user_pref("media.eme.apiVisible", false);
+user_pref("browser.eme.ui.enabled", false);                     // [boolean] optional since FF 47
+user_pref("media.gmp-eme-adobe.enabled", false);                // [boolean] optional since FF 47
+user_pref("media.eme.enabled", false);                          // [boolean] optional since FF 47
+user_pref("media.eme.apiVisible", false);                       // [boolean] optional since FF 47
 /*
     Media
 */
