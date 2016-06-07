@@ -220,7 +220,7 @@ user_pref("experiments.manifest.uri", "");
 user_pref("experiments.supported", false);
 user_pref("gecko.buildID", 20100101);                               // [string] browser build ID - value taken ToR browser
 user_pref("media.gmp-manager.buildID", "20000101000000");           // ^^
-user_pref("general.useragent.compatMode.firefox", false);           // [boolean] whether to append a special compatibility token to the user-agent string - could potentially be used for fingerprinting and should not be necessary for average user
+user_pref("general.useragent.compatMode.firefox", false);           // [boolean] whether to append a special compatibility token to the user-agent string - could potentially be used for fingerprinting and should not be necessary for average user (TRG + SHIFT + M)
 //user_pref("general.useragent.override", "");                      // [string] HTTP User-Agent string - should be set randomly with something like uMatrix
 //user_pref("gfx.downloadable_fonts.enabled", true);                // [boolean] whether to allow font downloads
 //user_pref("privacy.donottrackheader.enabled", false);               // [boolean] whether to enable the "do not track" header - essentially useless
