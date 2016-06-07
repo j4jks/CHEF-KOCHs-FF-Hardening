@@ -136,6 +136,7 @@ user_pref("datareporting.policy.dataSubmissionEnabled.v2", false);     // [boole
 /*
     SSL
 */
+//user_pref("security.ssl.disable_session_identifiers", true);       // [boolean] Session Identifiers - optional since it may breaks meek (Tor), ESR and for controlling HTTP/2 connections
 user_pref("security.fileuri.strict_origin_policy", true);            // [boolean] whether to limit local file ability to access files above the directory in which the file resides
 user_pref("security.mixed_content.block_active_content", true);      // [boolean] whether to block mixed active (other than images, etc.) content from a non-secure source when viewing an encrypted page (https)
 //user_pref("security.mixed_content.block_display_content", false);  // [boolean] whether to block mixed non-active (images, etc.) content from a non-secure source when viewing an encrypted page (https)
