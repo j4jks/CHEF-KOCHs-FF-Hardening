@@ -273,6 +273,7 @@ user_pref("browser.search.param.yahoo-fr", "");         // [string] remove track
 user_pref("browser.search.param.yahoo-fr-ja", "");      // [string] remove tracking parameter
 user_pref("browser.search.suggest.enabled", false);     // [boolean] whether to enable search suggestions for search bar
 user_pref("keyword.enabled", false);                    // [boolean] whether to allow searching from the address bar - !!! potential security/privacy issue since your search query can be stored by the search engine !!!
+//user_pref("findbar.highlightAll", false);             // [bollean] restores the old search behavior
 
 ////////////////////////////
 //// === NETWORKING === ////
