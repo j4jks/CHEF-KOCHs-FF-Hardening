@@ -407,6 +407,17 @@ user_pref("extensions.getAddons.cache.enabled", false);              // [boolean
 user_pref("extensions.webservice.discoverURL", "http://127.0.0.1");  // [string] disable downloading list of featured extensions for displaying in Get Add-ons panel
 
 ////////////////////////
+//// ===  Sync  === ////
+///////////////////////
+
+//identity.fxaccounts.remote.signin.uri
+//identity.fxaccounts.remote.signup.uri
+//services.sync.enabled
+//services.sync.engine.*
+//services.sync.jpake.serverURL
+//services.sync.serverURL
+
+////////////////////////
 //// === Fonts === ////
 ///////////////////////
 
