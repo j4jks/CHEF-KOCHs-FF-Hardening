@@ -316,6 +316,8 @@ user_pref("network.http.redirection-limit", 3);             // [integer] Maximum
 //// === DOM (mostly JAVASCRIPT) === ////
 /////////////////////////////////////////
 
+user_pref("dom.workers.enabled", false);                                    // [boolean] disallows background JavaScript services (like background proxy + push)
+user_pref("dom.serviceWorkers.enabled", false);                             // [boolean] ^^
 user_pref("dom.popup_allowed_events", click dblclick);                      // [integer] limit JavaScript popup windows if you clikc on a link which request >2 windows (to avoid window spam)
 user_pref("dom.keyboardevent.code.enabled", false);                         // [boolean] see: https://bugzilla.mozilla.org/show_bug.cgi?id=865649
 user_pref("dom.workers.websocket.enabled", false);                          // [boolean] whether to allow websocket or not
@@ -351,7 +353,7 @@ user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false); // [
 user_pref("dom.ipc.plugins.reportCrashURL", false);                         // [boolean] probably whether to send the URL of the website where a plugin crashed
 user_pref("dom.netinfo.enabled", false);                                    // [boolean] whether JS can get information about the network/browser connection - Network Information API provides general information about the system's connection type (WiFi, cellar, etc.)
 user_pref("dom.network.enabled", false);                                    // [boolean] whether to disable JS ability to determine the type of connection to the network
-user_pref("dom.popup_maximum", 5);
+user_pref("dom.popup_maximum", 3);
 user_pref("dom.server-events.enabled", false);                              // [boolean] whether to allow Server-Sent Events from the web server
 user_pref("dom.storage.enabled", true);                                     // [boolean] whether to allow DOM storage - this can be controlled in a more granular way with uMatrix, however if no add-on is used to control storage and you are concerned about preserving your privacy, it is recommended to set this to false, though this will break some websites
 user_pref("dom.telephony.enabled", false);                                  // [boolean] whether to enable JS Internet telephony - no known uses and potential security/privacy threat
