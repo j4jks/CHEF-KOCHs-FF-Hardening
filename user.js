@@ -75,6 +75,7 @@ user_pref("app.update.service.enabled", false);                     // [boolean]
 user_pref("app.update.showInstalledUI", true);                      // [boolean] whether to display a notice after an update is applied
 user_pref("app.update.silent", false);                              // [boolean] whether to show update prompt - Dependant upon app.update.enabled
 user_pref("app.update.staging.enabled", false);                     // [boolean] presumably whether to allow background downloading of updates
+user_pref("app.update.backgroundMaxErrors", 3);                     // [boolean] maximum allowed background errors which are logged/shown (default 10)
 /*
     --- Extension Updates ---
     I suggest to disallow any automatic updating for extensions and manually check for updates on a regular basis, reading the change logs carefully. th problem with automatic updates for extensions is that a developer can sell  popular extension to a marketing company that will add code to track use browsing habits, display ads, etc.. consider using Extension Defender t help guard against this and download extensions only from AMO
