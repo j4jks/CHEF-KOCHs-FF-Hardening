@@ -316,6 +316,7 @@ user_pref("network.http.redirection-limit", 3);             // [integer] Maximum
 //// === DOM (mostly JAVASCRIPT) === ////
 /////////////////////////////////////////
 
+user_pref("dom.popup_allowed_events", click dblclick);                      // [integer] limit JavaScript popup windows if you clikc on a link which request >2 windows (to avoid window spam)
 user_pref("dom.keyboardevent.code.enabled", false);                         // [boolean] see: https://bugzilla.mozilla.org/show_bug.cgi?id=865649
 user_pref("dom.workers.websocket.enabled", false);                          // [boolean] whether to allow websocket or not
 user_pref("dom.allow_cut_copy", false);                                     // [boolean] whether to allow JS to manipulate clipboard data (requires user intervention, like clicking a button)
