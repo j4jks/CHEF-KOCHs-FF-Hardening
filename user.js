@@ -377,6 +377,8 @@ user_pref("dom.push.connection.enabled", false);
 user_pref("dom.push.enabled", false);                                       // [boolean] disables DOM push (Push API)
 user_pref("dom.webnotifications.enabled", false);
 user_pref("dom.webnotifications.serviceworker.enabled", false);
+//user_pref("network.websocket.max-*", 1);                                  // [integer] since FF 35 WebSocket APi was introduced which allows bi-directional TCP connections to push servers, we want to limit the WebSocket requests to a minimum
+//user_pref("network.websocket.timeout*", 1);                               // [integer] ^^
 
 /////////////////////////////////////////////////
 //// === WEBSITE APPERANCE/FUNCTIONALITY === ////
