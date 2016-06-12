@@ -309,6 +309,7 @@ user_pref("network.manage-offline-status", false);          // [boolean] whether
 user_pref("network.predictor.enabled", false);              // [boolean] similar to network.prefetch-next, whether to prefetch resources for sites not yet visited (this was named "network.seer.enabled")
 user_pref("network.prefetch-next", false);                  // [boolean] disable prefetching pages not yet visited
 user_pref("network.proxy.socks_remote_dns", true);          // [boolean] true=have proxy do DNS lookups, false= do them client side
+user_pref("network.http.redirection-limit", 3);             // [integer] Maximum allowed redirection limit (default 20)
 
 /////////////////////////////////////////
 //// === DOM (mostly JAVASCRIPT) === ////
