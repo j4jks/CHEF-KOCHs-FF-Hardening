@@ -513,6 +513,7 @@ user_pref("ui.submenuDelay", 150);                                  // [integer]
 user_pref("view_source.tab", false);                                // [boolean] whether to view web page source code in a tab or a window which offers more options
 user_pref("browser.uitour.enabled", false);                         // [boolean] Disable the UI tour at startup
 user_pref("browser.uitour.url", "");                                // [integer] ^^
+user_pref("browser.zoom.siteSpecific", false);                      // [boolean] whether you set a site specific zoom level it will not be saved and set to default after restart 
 
 /*
     Pocket (3rd party service)
