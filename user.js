@@ -571,3 +571,4 @@ user_pref("mousewheel.acceleration.factor", 10);                    // [integer]
 user_pref("mousewheel.acceleration.start", 0);                      // [integer] when to apply mouse wheel.acceleration.factor (after how many scroll clicks of mouse wheel) - value must be greater than -1
 user_pref("mousewheel.default.delta_multiplier_y", 85);             // [integer] sets the vertical step size
 //user_pref("mousewheel.min_line_scroll_amount", 1);                // [integer] how many lines to scroll with mouse wheel (approx.) - doesn't seem to have any affect
+user_pref("mousewheel.system_scroll_override_on_root_content.enabled", false);  // [boolean] disables per-page mousewheel interaction 
