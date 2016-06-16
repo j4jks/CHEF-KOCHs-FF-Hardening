@@ -1,4 +1,12 @@
 ////////////////////////////////
+////  === TOR SPECIFIC ===  ////
+////////////////////////////////
+/*
+    Tor Browser / Expert bundle specific changes
+*/
+//user_pref("extensions.torlauncher.start_tor ", 0);                    // [integer] suppress "Tor is not working in this browser" 
+
+////////////////////////////////
 //// === LINUX SPECIFIC === ////
 ////////////////////////////////
 
