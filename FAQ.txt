@@ -1,4 +1,4 @@
-Why is NoScript configured to allow JavaScript by default in Tor Browser? Isn't that unsafe?
+#1 Why is NoScript configured to allow JavaScript by default in Tor Browser? Isn't that unsafe?
 ================================
 
 We configure NoScript to allow JavaScript by default in Tor Browser because many websites will not work with JavaScript disabled. Most users would give up on Tor entirely if a website they want to use requires JavaScript, because they would not know how to allow a website to use JavaScript (or that enabling JavaScript might make a website work).
@@ -11,3 +11,18 @@ Until we get there, feel free to leave JavaScript on or off depending on your se
 
 Source:
 * https://www.torproject.org/docs/faq.html.en#TBBJavaScriptEnabled
+
+
+
+
+#2 Wont fix
+================================
+
+
+I not waste my and anyones time trying to fix something which is protocol related and needs to be fixed withiin the source. Disabling it makes less sense because a) not every site use it b) nbot directly compromise your security setup c) not every page is exploitable or abuse this (since there is less benefit from doing it) d) I believe in layer security and not software 'security'.
+
+
+* WebRTC
+* Entirely disabling JS (see also ^^ #1)
+* OpenGL/Vulkan
+* Stuff which breaks functionally such as 'xyz' API
