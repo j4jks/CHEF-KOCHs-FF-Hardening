@@ -215,7 +215,7 @@ user_pref("general.useragent.compatMode.firefox", false);           // [boolean]
 //user_pref("privacy.donottrackheader.enabled", false);               // [boolean] whether to enable the "do not track" header - essentially useless
 user_pref("privacy.trackingprotection.enabled", false);             // [boolean] whether to enable tracking protection (see: browser.polaris.enabled) - not needed if using other means, such as uBlock - when enabled, a new icon in address bar will appear when a site is being blocked, allowing to disable per domain - note that enabling this allows the download of a list from Mozilla
 user_pref("browser.trackingprotection.gethashURL", "");
-user_pref("browser.trackingprotection.getupdateURL", "");
+user_pref("browser.trackingprotection.updateURL", "");
 user_pref("privacy.trackingprotection.pbmode.enabled", false);
 user_pref("signon.autofillForms", false);                           // [boolean] Whether to allow the password manager to auto-fill log-on forms - potential security risk - if false, the password will still be set after the user name is manually entered, which can usually be done quickly from a drop-down list
 user_pref("startup.homepage_welcome_url", "about:about");           // [string] what content to display when the browser is started with a new profile
@@ -239,7 +239,7 @@ user_pref("browser.safebrowsing.reportPhishURL", "");
 /*
     FF43+ safebrowsing URL's
 */
-user_pref("browser.safebrowsing.provider.google.appRepURL", "");
+user_pref("browser.safebrowsing.appRepURL", "");
 user_pref("browser.safebrowsing.provider.google.gethashURL", "");
 user_pref("browser.safebrowsing.provider.google.reportURL", "");
 user_pref("browser.safebrowsing.provider.google.updateURL", "");
