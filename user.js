@@ -146,10 +146,13 @@ user_pref("toolkit.telemetry.unifiedIsOptIn", true);    // [boolean] makes telem
 /*
     Geolocation
 */
+user_pref("browser.search.geoip.timeout", 1);        // GeoIP internal timeout before it stops 
 user_pref("browser.search.geoip.url", "");           // [string] disable contacting Mozilla to set the default search engine
 //user_pref("geo.enabled", false);                   // [boolean] whether to enable geo-location - not strictly necessary to disable since user should be prompted before location data is allowed to be sent
 //user_pref("geo.wifi.uri", "http://127.0.0.1");
 user_pref("geo.wifi.logging.enabled", false);        // [boolean] disables the wifi logging feature
+user_pref("geo.wifi.xhr.timeout", 1);                // [string] scan timeout for network
+
 /*
     WebGL
 */
@@ -277,6 +280,10 @@ user_pref("browser.download.useDownloadDir", false);                    // [bool
 
 user_pref("browser.search.countryCode", "US");          // [string] set the default language to US
 user_pref("browser.search.region", "US");
+user_pref("intl.locale.matchOS", false);
+user_pref("general.useragent.locale", "en-US");
+user_pref("browser.search.geoSpecificDefaults", false); // [boolean] set GeoIP specific defaults
+user_pref("browser.search.geoSpecificDefaults.url", "");// [string] ^^
 user_pref("intl.accept_languages", "en-US, en");        // [string] default but we want to force it to be used in case you downloaded lang specific builds
 user_pref("browser.search.param.yahoo-fr", "");         // [string] remove tracking parameter
 user_pref("browser.search.param.yahoo-fr-ja", "");      // [string] remove tracking parameter
