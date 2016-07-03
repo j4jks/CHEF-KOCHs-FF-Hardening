@@ -67,6 +67,7 @@ user_pref("privacy.clearOnShutdown.offlineApps", true);        // [boolean] whet
 
 //user_pref("media.default_volume", 0.2);                      // [string] 0.1 = 10% volume on HTML5 Videos -> 1.0 = 100%
 //user_pref("media.webaudio.enabled", false);                  // [boolean] ??
+user_pref("media.mediasource.webm.enabled", true);             // [boolean] enable webm
 
 //////////////////////////
 //// === UPDATING === ////
@@ -262,6 +263,10 @@ user_pref("social.share.activationPanelEnabled", false);
 user_pref("social.shareDirectory", "");
 user_pref("social.toast-notifications.enabled", false);
 //user_pref("social.whitelist", "");                      // [string] URL of white-listed social service providers
+//user_pref("loop.facebook.appId", "");
+//user_pref("loop.facebook.enabled", false);
+//user_pref("loop.facebook.fallbackUrl", "");
+//user_pref("loop.facebook.shareUrl", "");
 
 //////////////////////////
 //// === DOWNLOAD === ////
@@ -500,6 +505,7 @@ user_pref("browser.newtabpage.introShown", true);
 user_pref("browser.sessionhistory.max_entries", 5);             // [integer] tab specific max number of pages that can be traversed when moving forward/backward in history - affects total memory consumption
 user_pref("browser.tabs.closeWindowWithLastTab", false);        // [boolean] whether to exit FF when closing last tab
 user_pref("browser.tabs.loadDivertedInBackground", true);       // [boolean] cause links opened from external programs to open in a new background tab
+user_pref("browser.tabs.insertRelatedAfterCurrent", true);      // [boolean] open links in a new tab immediately to the right of parent tab, not far right
 user_pref("browser.tabs.loadInBackground", false);              // [boolean] focus new tabs instead of loading them in the background
 user_pref("browser.tabs.selectOwnerOnClose", true);             // [boolean] focus the parent tab when a child tab is closed
 user_pref("browser.tabs.warnOnClose", false);                   // [boolean] disable warning when closing multiple tabs
@@ -507,9 +513,18 @@ user_pref("browser.tabs.warnOnCloseOtherTabs", false);          // [boolean] dis
 user_pref("browser.tabs.warnOnOpen", false);                    // [boolean] disable warning when opening too many tabs
 
 //////////////////////
+//// === Proxy === ////
+//////////////////////
+// This can be found under Options>Advanced>Network>Connection Settings
+// It is advised to set this via Options where many other settings may apply
+// 0=no proxy, 4=auto-detect, 5=use system proxy (default), 1=manual proxy settings
+//user_pref("network.proxy.type", 0);
+
+//////////////////////
 //// === MISC === ////
 //////////////////////
 
+user_pref("browser.tabs.animate", false);                           // [boolean] disable tab animation, speed things up a little
 user_pref("accessibility.typeaheadfind", false);                    // [boolean] whether to open the find bar to search for text as soon as you start typing
 user_pref("browser.backspace_action", 2);                           // [integer] keyboard backspace key action: 0=go back, 1=page up, 2=disable
 user_pref("browser.feeds.showFirstRunUI", false);
@@ -552,7 +567,7 @@ user_pref("reader.parse-on-load.enabled", false);                   // [boolean]
 user_pref("startup.homepage_welcome_url", "");
 user_pref("startup.homepage_welcome_url.additional", "");           // [integer] Disables the UI Welcome stuff in ESR/FF on first startup
 user_pref("startup.homepage_override_url", "");                     // [integer] 
-user_pref("ui.submenuDelay", 150);                                  // [integer] delay in ms before a sub-menu of a context menu is displayed
+user_pref("ui.submenuDelay", 100);                                  // [integer] delay in ms before a sub-menu of a context menu is displayed
 user_pref("view_source.tab", false);                                // [boolean] whether to view web page source code in a tab or a window which offers more options
 user_pref("browser.uitour.enabled", false);                         // [boolean] Disable the UI tour at startup
 user_pref("browser.uitour.url", "");                                // [integer] ^^
@@ -573,6 +588,12 @@ user_pref("devtools.webide.autoinstallADBHelper", false);
 user_pref("devtools.webide.autoinstallFxdtAdapters", false);
 user_pref("devtools.debugger.remote-enabled", false);
 user_pref("devtools.webide.enabled", false);
+/*
+
+    e10s
+*/
+user_pref("browser.ctrlTab.previews", true);               // [boolean] enable turn on APZ (Async Pan/Zoom) 
+
 
 //////////////////////////////////
 //// === SMOOTH SCROLLING === ////
