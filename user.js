@@ -106,7 +106,7 @@ user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");  // [stri
 //user_pref("browser.startup.homepage_override.mstone", "ignore");      // [string] used to display browser update information - may want to uncomment this if using a proxy for anonymity
 user_pref("browser.microsummary.updateGenerators", false);              // [boolean] whether to auto-update bookmark microsummaries
 user_pref("browser.search.update", false);                              // [boolean] whether to auto-update search plugins - probably want to disable this if using custom edited search plugins in \searchplugins folder
-user_pref("lightweightThemes.update.enabled", false);                   // [boolean] whether to auto-update Personas (themes)
+//user_pref("lightweightThemes.update.enabled", false);                 // [boolean] whether to auto-update Personas (themes)
 
 /////////////////////////////////////////////
 //// === SECURITY / PRIVACY, GENERAL === ////
@@ -446,6 +446,12 @@ user_pref("font.name.sans-serif.x-unicode", "Arial");
 user_pref("font.name.sans-serif.x-western", "Arial");                // [string] default Arial
 user_pref("font.name.monospace.x-unicode", "Lucida Console");
 user_pref("font.name.monospace.x-western", "Lucida Console");        // [string] default Courier New
+
+
+/////////////////////////
+//// ===   JS    === ////
+/////////////////////////
+user_pref("javascript.use_us_english_locale", true);                 // (hidden pref)
 
 /////////////////////////
 //// === PLUGINS === ////
