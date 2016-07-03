@@ -195,7 +195,6 @@ user_pref("media.getusermedia.agc_enabled", true);                 // [boolean] 
 //user_pref("offline-apps.allow_by_default", false);               // [boolean] whether to allow offline apps or no 
 user_pref("beacon.enabled", false);                                // [boolean] whether to send additional analytics to web servers
 user_pref("breakpad.reportURL", "");
-user_pref("browser.aboutHomeSnippets.updateUrl", "");
 user_pref("browser.helperApps.deleteTempFileOnExit", true);
 //user_pref("browser.history.allowPopState", false);               // [boolean] whether to allow web sites to manipulate browser history - 'false' breaks some web sites when navigating within them, such as YouTube
 //user_pref("browser.history.allowPushState", false);              // [boolean] whether to allow HTML5 web sites to add entries to the browser history - 'false' breaks some web sites when navigating within them, such as YouTube
@@ -295,6 +294,7 @@ user_pref("keyword.enabled", false);                    // [boolean] whether to 
 //// === NETWORKING === ////
 ////////////////////////////
 
+user_pref("captivedetect.canonicalURL", "");                              // [string] Disable CaptivePortal stuff
 //user_pref("network.jar.block-remote-files", true);                      // [boolean] blocks external remote .jar files
 //user_pref("network.negotiate-auth.allow-proxies", false);               // [boolean] internal proxy hardening
 //user_pref("network.automatic-ntlm-auth.allow-proxies", false);          // [boolean] disallow some types of insecure proxies 
@@ -331,8 +331,11 @@ user_pref("network.http.redirection-limit", 3);             // [integer] Maximum
 //// === DOM (mostly JAVASCRIPT) === ////
 /////////////////////////////////////////
 
+user_pref("dom.w3c_touch_events.enabled", 0);                               // [integer] https://trac.torproject.org/projects/tor/ticket/10286
 user_pref("dom.workers.enabled", false);                                    // [boolean] disallows background JavaScript services (like background proxy + push)
 user_pref("dom.serviceWorkers.enabled", false);                             // [boolean] ^^
+user_pref("dom.beforeAfterKeyboardEvent.enabled", false);                   // [boolean] Keyboard events
+user_pref("dom.keyboardevent.dispatch_during_composition", false);          // [boolean] ^^
 user_pref("dom.popup_allowed_events", click dblclick);                      // [integer] limit JavaScript popup windows if you clikc on a link which request >2 windows (to avoid window spam)
 user_pref("dom.keyboardevent.code.enabled", false);                         // [boolean] see: https://bugzilla.mozilla.org/show_bug.cgi?id=865649
 user_pref("dom.workers.websocket.enabled", false);                          // [boolean] whether to allow websocket or not
@@ -446,6 +449,8 @@ user_pref("font.name.sans-serif.x-unicode", "Arial");
 user_pref("font.name.sans-serif.x-western", "Arial");                // [string] default Arial
 user_pref("font.name.monospace.x-unicode", "Lucida Console");
 user_pref("font.name.monospace.x-western", "Lucida Console");        // [string] default Courier New
+user_pref("gfx.direct2d.disabled", true);                            // D2D may affects fonts too
+user_pref("layers.acceleration.disabled", true);                     // HardwareAcc. ^^
 
 
 /////////////////////////
