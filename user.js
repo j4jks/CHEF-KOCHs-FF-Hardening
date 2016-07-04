@@ -594,6 +594,14 @@ user_pref("devtools.webide.enabled", false);
 */
 user_pref("browser.ctrlTab.previews", true);               // [boolean] enable turn on APZ (Async Pan/Zoom) 
 
+//////////////////////////////////
+//// === Tor specific >50  === ////
+//////////////////////////////////
+/*
+    These settings are for Firefox >50, which introducing some tor related privacy 'options'.
+*/
+user_pref("privacy.resistFingerprinting", true);                            // [boolean]  blocks enumeration of plugins and mimeTypes
+user_pref("browser.download.forbid_open_with", true);                       // [boolean] eturns 0 for screen.orientation.angle and "landscape-primary" for screen.orientation.type when sites or applications request the information
 
 //////////////////////////////////
 //// === SMOOTH SCROLLING === ////
