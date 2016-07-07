@@ -20,4 +20,4 @@
 * [Browser hardening (Blog.torproject.org)](https://blog.torproject.org/blog/isec-partners-conducts-tor-browser-hardening-study)
 
 
-**This project is beta**, some settings are not recommend to apply because it might break stuff.
+**If somone want the ownership of this project he/she can contact me via eMail, I don't see any future in about:config or such hardening that's why I will drop the support here.**
