@@ -66,8 +66,9 @@ user_pref("privacy.clearOnShutdown.offlineApps", true);        // [boolean] whet
 */
 
 //user_pref("media.default_volume", 0.2);                      // [string] 0.1 = 10% volume on HTML5 Videos -> 1.0 = 100%
-//user_pref("media.webaudio.enabled", false);                  // [boolean] ??
+//user_pref("media.webaudio.enabled", false);                  // [boolean] disable/enable audio in media
 user_pref("media.mediasource.webm.enabled", true);             // [boolean] enable webm
+user_pref("firefox-safebrowsing-blocklist", true);             // [boolean] enable blocklist against plugin fingerprinting
 
 //////////////////////////
 //// === UPDATING === ////
