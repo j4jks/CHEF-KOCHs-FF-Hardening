@@ -22,3 +22,5 @@
    // user_pref("signon.ignoreAutocomplete", false);
 // 3205: (v26.0+) read Moonchild's description on the PaleMoon forum thread linked above
    // user_pref("dom.disable_beforeunload", true);
+   
+user_pref("media.autoplay.allowscripted", false)          // [boolean] disables HTML5 autoloading on videos 
