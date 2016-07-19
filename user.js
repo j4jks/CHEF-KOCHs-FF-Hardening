@@ -419,7 +419,7 @@ user_pref("gfx.color_management.mode", 0);                    // [integer] wheth
 user_pref("image.animation_mode", "once");                    // [string] how to display animated images: "none"=don't animate, "once"=allow to loop only once, "normal"=allow infinite looping
 //user_pref("svg.in-content.enabled", false);                 // [boolean] may breaks pages but svg is to useful - only TBB
 user_pref("layout.css.devPixelsPerPx", "1.1");                // [string] set the default zoom level for the entire browser and content (def = -1.0)
-user_pref("media.autoplay.enabled", true);                    // [boolean] whether to allow auto-play of embedded media - setting to false apparently can cause some videos to not play, including 1st or 3rd party Vimeo videos, and may also necesitate having to click the play button twice
+//user_pref("media.autoplay.enabled", true);                    // [boolean] whether to allow auto-play of embedded media - setting to false apparently can cause some videos to not play, including 1st or 3rd party Vimeo videos, and may also necesitate having to click the play button twice
 user_pref("media.block-play-until-visible", true);            // [boolean] whether to play media in a tab that does not have focus - note that once it starts playing, changing tabs will not stop it
 user_pref("layout.css.visited_links_enabled", false);         // [boolean] http://dbaron.org/mozilla/visited-privacy
 
