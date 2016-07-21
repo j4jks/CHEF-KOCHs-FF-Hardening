@@ -342,7 +342,7 @@ user_pref("dom.workers.enabled", false);                                    // [
 user_pref("dom.serviceWorkers.enabled", false);                             // [boolean] ^^
 user_pref("dom.beforeAfterKeyboardEvent.enabled", false);                   // [boolean] Keyboard events
 user_pref("dom.keyboardevent.dispatch_during_composition", false);          // [boolean] ^^
-user_pref("dom.popup_allowed_events", click dblclick);                      // [integer] limit JavaScript popup windows if you clikc on a link which request >2 windows (to avoid window spam)
+user_pref("dom.popup_allowed_events", "click dblclick");                      // [integer] limit JavaScript popup windows if you clikc on a link which request >2 windows (to avoid window spam)
 user_pref("dom.keyboardevent.code.enabled", false);                         // [boolean] see: https://bugzilla.mozilla.org/show_bug.cgi?id=865649
 user_pref("dom.workers.websocket.enabled", false);                          // [boolean] whether to allow websocket or not
 user_pref("dom.allow_cut_copy", false);                                     // [boolean] whether to allow JS to manipulate clipboard data (requires user intervention, like clicking a button)
@@ -591,18 +591,12 @@ user_pref("devtools.debugger.remote-enabled", false);
 user_pref("devtools.webide.enabled", false);
 /*
 
-    e10s
+    e10s related
 */
-user_pref("browser.ctrlTab.previews", true);               // [boolean] enable turn on APZ (Async Pan/Zoom) 
-
-//////////////////////////////////
-//// === Tor specific >50  === ////
-//////////////////////////////////
-/*
-    These settings are for Firefox >50, which introducing some tor related privacy 'options'.
-*/
-user_pref("privacy.resistFingerprinting", true);                            // [boolean]  blocks enumeration of plugins and mimeTypes
-user_pref("browser.download.forbid_open_with", true);                       // [boolean] eturns 0 for screen.orientation.angle and "landscape-primary" for screen.orientation.type when sites or applications request the information
+//user_pref("browser.ctrlTab.previews", true);               // [boolean] enable turn on APZ (Async Pan/Zoom) 
+// user_pref("browser.tabs.remote.autostart", true);         //
+// user_pref("browser.tabs.remote.force-enable", true);      // (hidden pref)
+// user_pref("extensions.e10sBlocksEnabling", false);        //
 
 //////////////////////////////////
 //// === SMOOTH SCROLLING === ////
