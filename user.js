@@ -432,7 +432,7 @@ user_pref("extensions.blocklist.enabled", false);                    // [boolean
 user_pref("extensions.getAddons.cache.enabled", false);              // [boolean] whether to check daily for extension metadata updates (description, ratings, etc.) when clicking the "more" link on the Add-ons panel - also seems to block remote icons for extensions in the Add-ons panel
 user_pref("extensions.webservice.discoverURL", "http://127.0.0.1");  // [string] disable downloading list of featured extensions for displaying in Get Add-ons panel
 user_pref("general.config.obscure_value", 0);                        // [integer]
-pref("general.config.filename", "config.js");                        // [string]
+user_pref("general.config.filename", "config.js");                   // [string]
 
 ////////////////////////
 //// ===  Sync  === ////
