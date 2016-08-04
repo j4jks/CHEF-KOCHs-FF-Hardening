@@ -231,6 +231,7 @@ user_pref("startup.homepage_welcome_url", "about:about");           // [string] 
 /*
     --- Mozilla/Google Safe Browsing ---
     I would recommend disabling safe-browsing entirely and using a good DN server, such as OpenDNS/dnscrypt, in combination with uBlock and its anti-malware filter lists to mitigate the threat of domains hosting malware, else th URLs of some, or possibly all of the sites you visit and files you download may be sent to Google along with your IP address. for more see https://www.google.com/intl/en/chrome/browser/privacy/
+    https://wiki.mozilla.org/Security/Safe_Browsing#Prefs 
 */
 user_pref("browser.safebrowsing.downloads.enabled", false);         // [boolean] unknown, but since we're not using Google "Safe Browsing" feature, lets' make sure it's dead
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);  // [boolean] unknown, but since we're not using Google "Safe Browsing" feature, lets' make sure it's dead
@@ -430,6 +431,8 @@ user_pref("layout.css.visited_links_enabled", false);         // [boolean] http:
 user_pref("extensions.blocklist.enabled", false);                    // [boolean] whether to download list of black-listed extensions, vulnerable plugins, crash-prone graphic drivers
 user_pref("extensions.getAddons.cache.enabled", false);              // [boolean] whether to check daily for extension metadata updates (description, ratings, etc.) when clicking the "more" link on the Add-ons panel - also seems to block remote icons for extensions in the Add-ons panel
 user_pref("extensions.webservice.discoverURL", "http://127.0.0.1");  // [string] disable downloading list of featured extensions for displaying in Get Add-ons panel
+user_pref("general.config.obscure_value", 0);                        // [integer]
+pref("general.config.filename", "config.js");                        // [string]
 
 ////////////////////////
 //// ===  Sync  === ////
