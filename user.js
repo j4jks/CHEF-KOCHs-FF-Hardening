@@ -284,6 +284,7 @@ user_pref("browser.download.useDownloadDir", false);                    // [bool
 //// === SEARCH === ////
 ////////////////////////
 
+user_pref("browser.urlbar.oneOffSearches", false);      // [boolean] disable one-off searches
 user_pref("browser.search.countryCode", "US");          // [string] set the default language to US
 user_pref("browser.search.region", "US");
 user_pref("intl.locale.matchOS", false);
