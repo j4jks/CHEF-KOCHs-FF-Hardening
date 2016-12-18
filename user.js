@@ -135,6 +135,7 @@ user_pref("security.mixed_content.block_active_content", true);      // [boolean
 user_pref("security.ssl.errorReporting.automatic", false);           // [boolean] whether to send SSL error reports without asking the user
 user_pref("security.ssl.errorReporting.enabled", false);             // [boolean] whether to enable SSL error reporting
 user_pref("security.ssl.errorReporting.url", "");                    // [string] URL to which SSL errors are reported
+user_pref("security.dialog_enable_delay", 1000);                     // [integer] time in ms when installing an addon 
 /*
     Telemetry data is sent to Mozilla and includes information about the build of the browser, various benchmark values, the installed extensions, and information about the computer system
 */
