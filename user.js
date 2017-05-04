@@ -110,6 +110,18 @@ user_pref("nglayout.enable_drag_images", false);                            // w
 user_pref("devtools.toolbox.zoomValue", "1.3");                             // font size for the Developers Toolbox
 
 
+/* Disable Presentation API
+ * https://wiki.mozilla.org/WebAPI/PresentationAPI
+ * https://www.w3.org/TR/presentation-api/ 
+*/
+user_pref("dom.presentation.enabled", false);                             //
+user_pref("dom.presentation.controller.enabled", false);                  //
+user_pref("dom.presentation.discoverable", false);                        //
+user_pref("dom.presentation.discovery.enabled", false);                   //
+user_pref("dom.presentation.receiver.enabled", false);                    // 
+user_pref("dom.presentation.session_transport.data_channel.enable", false); //^
+
+
 /*
  * === FAV Icons ===
  *
