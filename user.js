@@ -8,6 +8,7 @@ user_pref("network.protocol-handler.app.apt", "/usr/bin/apturl");       // path 
 user_pref("network.protocol-handler.app.apt+http", "/usr/bin/apturl");  // path to APT URL handler
 user_pref("network.protocol-handler.warn-external.apt", true);
 user_pref("network.protocol-handler.warn-external.apt+http", true);
+user_pref("network.http.referer.hideOnionSource", true);                // Hide Referrer when leaving a .onion domain 
 
 /*
  * === GHACKS DIFFS ===
