@@ -62,7 +62,7 @@ user_pref("svg.disabled", false);                               // 'true' breaks
 /*
  * === TABS-preferences (matter of taste) ===
  *
- * My personal settings for tabs - some are different from ghacks settings and some are duplicates just because i like having them all in one section
+ * My personal settings for tabs - some are different from ghacks settings and some are duplicates just because I like having them all in one section
 */
 
 user_pref("accessibility.tabfocus", 3);                         // 3: Tab key focuses text fields and all other form elements
@@ -153,11 +153,11 @@ user_pref("dom.ipc.plugins.sandbox-level.flash, "donotuse");               //
 
 // user_pref("media.flac.enabled", false);                                 // 
 // user_pref("media.mp4.enabled", false);                                  // 
-// user_pref("media.ogg.enabled", false);
-// user_pref("media.ogg.flac.enabled", false);
-// user_pref("media.opus.enabled", false);
-// user_pref("media.raw.enabled", false);
-// user_pref("media.wave.enabled", false);
+// user_pref("media.ogg.enabled", false);                                  //
+// user_pref("media.ogg.flac.enabled", false);                             //
+// user_pref("media.opus.enabled", false);                                 //
+// user_pref("media.raw.enabled", false);                                  //
+// user_pref("media.wave.enabled", false);                                 //
 // user_pref("media.webm.enabled", false);                                 //
 
 /*
@@ -165,7 +165,6 @@ user_pref("dom.ipc.plugins.sandbox-level.flash, "donotuse");               //
  *
  * These settings provide silky-smooth scrolling that adjusts dynamically according to mouse wheel speed
 */
-
 
 user_pref("general.smoothScroll", true);                            // enable/disable smooth scrolling
 user_pref("general.smoothScroll.lines", true);                      // enable/disable smooth line scrolling (up/down arrow/page keys)
