@@ -137,7 +137,7 @@ user_pref("browser.shell.shortcutFavicons", false);                        //
 /*
  * === Sandbox related ===
  *
- * Sandbox feature in FF
+ * Sandbox feature in FF aka MULTI-PROCESS (e10s) since FF 48+
 */
 
 user_pref("security.sandbox.content.level", "donotuse");                   //
