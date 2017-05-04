@@ -12,10 +12,10 @@ user_pref("network.protocol-handler.warn-external.apt+http", true);
 /*
  * === GHACKS DIFFS ===
  *
- * These prefs are duplicates of the ghacks.net settings above witrh different values
+ * These prefs are duplicates of the ghacks.net settings above with different values
 */
 
-//user_pref("reader.parse-on-load.enabled", true);              // 
+//user_pref("reader.parse-on-load.enabled", true);              // Disable "Reader View"
 user_pref("browser.urlbar.decodeURLsOnCopy", true);             // Copying non-ASCII URI from location bar
 user_pref("browser.storageManager.enabled", false);             // enables Site Data in Preferences in conjunction with "dom.storageManager.enabled", true 
 user_pref("browser.bookmarks.max_backups", 5);                  // i don't mind keeping a few extra backups of my bookmarks
@@ -143,7 +143,7 @@ user_pref("browser.shell.shortcutFavicons", false);                        //
 user_pref("security.sandbox.content.level", "donotuse");                   //
 user_pref("dom.ipc.plugins.sandbox-level.default", "donotuse");            //
 user_pref("dom.ipc.plugins.sandbox-level.flash, "donotuse");               //
-
+user_pref("dom.ipc.shims.enabledWarnings", true);                          // Enable console shim warnings for add-ons with the 'multiprocessCompatible' flag as false
 
 /*
  * === Media types and support ===
