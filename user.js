@@ -102,7 +102,7 @@ user_pref("browser.startup.homepage", "https://duckduckgo.com/");           // p
 user_pref("browser.startup.page", 3);                                       // page to display on startup - 1=home, 2=blank, 3=restore last session
 user_pref("browser.triple_click_selects_paragraph", false);                 // whether to select paragraphs when triple clicked
 user_pref("full-screen-api.warning.delay", 0);                              // how long to display a warning ("YouTube is now Fullscreen") when a site enters full-screen mode - '0' disables the warning
-user_pref("general.autoScroll", false);                                     // Whether to enable auto-scrolling (middle-click on a page to display scroll map)
+user_pref("general.autoScroll", false);                                     // Disable middle-click enabling auto-scrolling on Windows/Mac
 user_pref("layout.word_select.eat_space_to_next_word", false);              // whether to include spaces after a word when double clicking to select the word
 user_pref("layout.word_select.stop_at_punctuation", true);                  // whether to stop selection at a punctuation when double clicking to select a word
 user_pref("mousewheel.with_shift.action", 0);                               // controls what happens when the Shift key is pressed and the mouse wheel is scrolled
