@@ -15,6 +15,9 @@ user_pref("network.protocol-handler.warn-external.apt+http", true);
  * These prefs are duplicates of the ghacks.net settings above witrh different values
 */
 
+//user_pref("reader.parse-on-load.enabled", true);              // 
+user_pref("browser.urlbar.decodeURLsOnCopy", true);             // Copying non-ASCII URI from location bar
+user_pref("browser.storageManager.enabled", false);             // enables Site Data in Preferences in conjunction with "dom.storageManager.enabled", true 
 user_pref("browser.bookmarks.max_backups", 5);                  // i don't mind keeping a few extra backups of my bookmarks
 user_pref("browser.download.forbid_open_with", false);          // allow the 'open with' option when downloading a file
 user_pref("browser.tabs.animate", true);                        // allow tab animation
@@ -24,6 +27,8 @@ user_pref("browser.urlbar.autocomplete.enabled", true);         // allow auto-co
 user_pref("browser.urlbar.maxRichResults", 10);                 // max number of search suggestions when searching in the address bar
 user_pref("browser.urlbar.suggest.bookmark", true);             // allow auto-complete of text entered in the address bar
 user_pref("browser.urlbar.suggest.history", true);              // allow auto-complete of text entered in the address bar
+user_pref("dom.event.contextmenu.enabled", false);              //
+user_pref("dom.IntersectionObserver.enabled", false);           // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 user_pref("dom.event.clipboardevents.enabled", true);           // 'false' breaks TinyMCE editor paste (Ctrl+V) such as is used by WordPress, possibly others
 user_pref("dom.indexedDB.enabled", true);                       // as ghacks said, disabling this will break some sites
 // allow all default JS pop-up events
@@ -40,11 +45,17 @@ user_pref("media.ogg.flac.enabled", true);                      // ^
 user_pref("media.opus.enabled", true);                          // ^
 user_pref("media.raw.enabled", true);                           // ^
 user_pref("media.wave.enabled", true);                          // ^
+//user_pref("network.protocol-handler.warn-external.file", false); Linux only 
+pref("geo.provider.ms-windows-location", false);                // Do not use MS own GeoLocation Service API
 user_pref("network.cookie.cookieBehavior", 1);                  // allow all 1st party cookies by default and control them with uMatrix
 user_pref("privacy.clearOnShutdown.history", false);            // keep history on shutdown
-user_pref("privacy.clearOnShutdown.formdata", false);           // keep form data on sgutdown
+user_pref("privacy.clearOnShutdown.sessions", true);            // 52alpha: false
+user_pref("privacy.clearOnShutdown.formdata", false);           // keep form data on shutdown
 user_pref("privacy.cpd.history", false);                        // don't select history item when clearing history manually
+user_pref("privacy.cpd.sessions", true);                        // 52alpha: false
+user_pref("ui.submenuDelay", 150);                              // 52alpha: 75 (time in ms)
 user_pref("privacy.cpd.formdata", false);                       // don't select form data when clearing history manually
+user_pref("security.mixed_content.use_hsts", true);             // 52alpha: false
 user_pref("security.dialog_enable_delay", 700);                 // shorten the delay to enable buttons when prompted (like the 'ok' button when downloading a file)
 user_pref("svg.disabled", false);                               // 'true' breaks YouTube player
 
@@ -77,6 +88,13 @@ user_pref("browser.tabs.warnOnOpen", false);                    // disable warni
  * === MISC ===
 */
 
+user_pref("browser.sessionstore.interval", 30000);                          // Controls the Session timeout for each own session (time in ms).
+user_pref("webextensions.storage.sync.serverURL", "");                      //
+user_pref("webextensions.storage.sync.enabled", false);                     //
+user_pref("browser.crashReports.unsubmittedCheck.enabled", false);          //
+user_pref("browser.crashReports.unsubmittedCheck.autoSubmit", false);       // 
+user_pref("browser.tabs.remote.separateFileUriProcess", true);              // default is false in FF53.  This runs file:// locations in a separate content process.
+user_pref("extensions.webextensions.remote", true);                         // default is false in FF53 so maybe not quite ready yet to enable
 user_pref("accessibility.typeaheadfind", false);                            // whether to open the find bar to search for text as soon as you start typing
 user_pref("browser.feeds.showFirstRunUI", false);                           // don't show feed intro when first subscribing to a news feed
 user_pref("browser.fullscreen.animate", true);                              // whether to animate window when entering full-screen view
@@ -91,11 +109,51 @@ user_pref("mousewheel.with_shift.action", 0);                               // c
 user_pref("nglayout.enable_drag_images", false);                            // whether images can be dragged - also seems to have an effect on highlighting and dragging text - this feature can be very annoying, especially for website editors/admins
 user_pref("devtools.toolbox.zoomValue", "1.3");                             // font size for the Developers Toolbox
 
+
+/*
+ * === FAV Icons ===
+ *
+ * The little icons for each webpage 
+*/
+
+user_pref("browser.shell.shortcutFavicons", false);                        //
+// user_pref("alerts.showFavicons", false);                                //
+// user_pref("browser.chrome.favicons", false);                            //
+// user_pref("browser.chrome.site_icons", false);                          // 
+
+
+/*
+ * === Sandbox related ===
+ *
+ * Sandbox feature in FF
+*/
+
+user_pref("security.sandbox.content.level", "donotuse");                   //
+user_pref("dom.ipc.plugins.sandbox-level.default", "donotuse");            //
+user_pref("dom.ipc.plugins.sandbox-level.flash, "donotuse");               //
+
+
+/*
+ * === Media types and support ===
+ *
+ * Controls which media filetypes are allowed
+*/
+
+// user_pref("media.flac.enabled", false);                                 // 
+// user_pref("media.mp4.enabled", false);                                  // 
+// user_pref("media.ogg.enabled", false);
+// user_pref("media.ogg.flac.enabled", false);
+// user_pref("media.opus.enabled", false);
+// user_pref("media.raw.enabled", false);
+// user_pref("media.wave.enabled", false);
+// user_pref("media.webm.enabled", false);                                 //
+
 /*
  * === SMOOTH SCROLLING ===
  *
  * These settings provide silky-smooth scrolling that adjusts dynamically according to mouse wheel speed
 */
+
 
 user_pref("general.smoothScroll", true);                            // enable/disable smooth scrolling
 user_pref("general.smoothScroll.lines", true);                      // enable/disable smooth line scrolling (up/down arrow/page keys)
