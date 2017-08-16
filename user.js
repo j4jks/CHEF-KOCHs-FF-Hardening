@@ -12,9 +12,10 @@ user_pref("browser.shell.checkDefaultBrowser", false);
 
 
 user_pref("geo.enabled", false);
-user_pref("geo.wifi.uri", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%");
+user_pref("geo.wifi.uri", "");
 user_pref("geo.wifi.xhr.timeout", 1);
 user_pref("geo.wifi.logging.enabled", false);
+user_pref("geo.security.allowinsecure", false);
 user_pref("browser.search.geoip.url", "");
 user_pref("browser.search.geoip.timeout", 1);
 user_pref("browser.search.countryCode", "US");
@@ -25,12 +26,12 @@ user_pref("browser.search.geoSpecificDefaults", false);
 user_pref("browser.search.geoSpecificDefaults.url", "");
 user_pref("intl.accept_languages", "en-US, en");
 user_pref("javascript.use_us_english_locale", true); // (hidden pref)
-user_pref("geo.security.allowinsecure", false);
 
 
 
 // user_pref("app.update.enabled", false);
 // user_pref("extensions.update.enabled", false);
+user_pref("extensions.legacy.enable", true);
 user_pref("app.update.auto", false);
 user_pref("extensions.update.autoUpdateDefault", false);
 user_pref("app.update.service.enabled", false);
@@ -52,19 +53,17 @@ user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("datareporting.healthreport.about.reportUrl", "data:text/plain,");
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
-user_pref("browser.selfsupport.enabled", false);
-user_pref("browser.selfsupport.url", "");
 user_pref("breakpad.reportURL", "");
 user_pref("browser.tabs.crashReporting.sendReport", false);
 user_pref("browser.crashReports.unsubmittedCheck.enabled", false);
 user_pref("browser.crashReports.unsubmittedCheck.autoSubmit", false);
 user_pref("browser.newtab.preload", false);
-user_pref("browser.newtabpage.directory.ping", "data:text/plain,");
 user_pref("browser.newtabpage.directory.source", "data:text/plain,");
 user_pref("browser.newtabpage.enabled", false);
 user_pref("browser.newtabpage.enhanced", false);
 user_pref("browser.newtabpage.introShown", true);
 user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
+user_pref("browser.tabs.remote.allowLinkedWebInFileUriProcess", false);
 user_pref("social.whitelist", "");
 user_pref("social.toast-notifications.enabled", false);
 user_pref("social.shareDirectory", "");
@@ -123,7 +122,6 @@ user_pref("dom.flyweb.enabled", false);
 user_pref("extensions.shield-recipe-client.enabled", false);
 user_pref("extensions.shield-recipe-client.api_url", "");
 user_pref("browser.newtabpage.activity-stream.enabled", false);
-// user_pref("extensions.screenshots.system-disabled", true);
 // user_pref("extensions.screenshots.disabled", true);
 user_pref("browser.onboarding.enabled", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
@@ -164,7 +162,6 @@ user_pref("browser.urlbar.autoFill.typed", false);
 user_pref("browser.urlbar.oneOffSearches", false);
 // user_pref("browser.formfill.enable", false);
 // user_pref("places.history.enabled", false);
-user_pref("browser.formautofill.enabled", false);
 user_pref("browser.taskbar.lists.enabled", false);
 user_pref("browser.taskbar.lists.frequent.enabled", false);
 user_pref("browser.taskbar.lists.recent.enabled", false);
@@ -214,8 +211,9 @@ user_pref("alerts.showFavicons", false);
 // user_pref("browser.tabs.remote.force-enable", true); // (hidden pref)
 // user_pref("extensions.e10sBlocksEnabling", false);
 // user_pref("dom.ipc.processCount", 4);
+// user_pref("dom.ipc.processCount.file", 1);
 // user_pref("extensions.webextensions.remote", true);
-// user_pref("browser.tabs.remote.separateFileUriProcess", true);
+user_pref("browser.tabs.remote.separateFileUriProcess", true);
 user_pref("dom.ipc.shims.enabledWarnings", true);
 // user_pref("dom.ipc.processCount.extension", 1);
 // user_pref("security.sandbox.content.level", "donotuse");
@@ -302,12 +300,10 @@ user_pref("media.gmp-widevinecdm.visible", false);
 user_pref("media.gmp-widevinecdm.enabled", false);
 user_pref("media.gmp-widevinecdm.autoupdate", false);
 user_pref("media.eme.enabled", false);
+user_pref("media.eme.chromium-api.enabled", false);
 user_pref("browser.eme.ui.enabled", false);
 user_pref("media.gmp-gmpopenh264.enabled", false);
 user_pref("media.gmp-gmpopenh264.autoupdate", false);
-user_pref("media.gmp-manager.url", "data:text/plain,");
-user_pref("media.gmp-manager.url.override", "data:text/plain,");
-user_pref("media.gmp-manager.updateEnabled", false);
 
 
 
@@ -381,7 +377,6 @@ user_pref("dom.push.userAgentID", "");
 user_pref("dom.event.clipboardevents.enabled", false);
 user_pref("dom.allow_cut_copy", false);
 user_pref("dom.indexedDB.enabled", false);
-user_pref("dom.enable_user_timing", false);
 user_pref("dom.enable_resource_timing", false);
 user_pref("dom.enable_performance", false);
 user_pref("dom.vibrator.enabled", false);
@@ -399,16 +394,13 @@ user_pref("browser.offline-apps.notify", true);
 // user_pref("offline-apps.quota.warn", 51200);
 
 
+user_pref("dom.keyboardevent.code.enabled", false);
+user_pref("dom.keyboardevent.dispatch_during_composition", false);
 user_pref("dom.gamepad.enabled", false);
 user_pref("dom.netinfo.enabled", false);
 user_pref("dom.vr.enabled", false);
-user_pref("dom.vr.oculus.enabled", false);
-user_pref("dom.vr.osvr.enabled", false);
-user_pref("dom.vr.openvr.enabled", false);
 user_pref("media.navigator.enabled", false);
 user_pref("media.video_stats.enabled", false);
-user_pref("dom.keyboardevent.code.enabled", false);
-user_pref("dom.keyboardevent.dispatch_during_composition", false);
 user_pref("gfx.direct2d.disabled", true); // [WINDOWS]
 user_pref("layers.acceleration.disabled", true);
 user_pref("dom.w3c_touch_events.enabled", 0);
@@ -490,8 +482,8 @@ user_pref("privacy.firstparty.isolate.restrict_opener_access", true);
 
 
 user_pref("privacy.resistFingerprinting", true);
-// user_pref("privacy.window.maxInnerWidth", 1366);
-// user_pref("privacy.window.maxInnerHeight", 768);
+// user_pref("privacy.window.maxInnerWidth", 1600);
+// user_pref("privacy.window.maxInnerHeight", 900);
 
 
 user_pref("network.cookie.cookieBehavior", 2);
@@ -543,9 +535,6 @@ user_pref("browser.link.open_newwindow", 3);
 user_pref("browser.ctrlTab.previews", true);
 user_pref("view_source.tab", false);
 user_pref("layout.spellcheckDefault", 1);
-user_pref("network.manage-offline-status", false);
-user_pref("browser.tabs.animate", false);
-user_pref("browser.fullscreen.animate", false);
 user_pref("ui.submenuDelay", 150);
 user_pref("browser.bookmarks.max_backups", 2);
 user_pref("browser.urlbar.clickSelectsAll", true);
@@ -565,6 +554,7 @@ user_pref("browser.bookmarks.showRecentlyBookmarked", false);
 // user_pref("media.wave.enabled", false);
 // user_pref("media.webm.enabled", false);
 // user_pref("media.wmf.enabled", false);
+user_pref("media.wmf.vp9.enabled", true);
 
 // user_pref("reader.parse-on-load.enabled", false);
 user_pref("browser.urlbar.decodeURLsOnCopy", true);
@@ -606,6 +596,8 @@ user_pref("browser.pocket.api", "");
 user_pref("browser.pocket.site", "");
 user_pref("browser.pocket.oAuthConsumerKey", "");
 user_pref("toolkit.telemetry.unifiedIsOptIn", true);
+//user_pref("toolkit.cosmeticAnimations.enabled", false);
+user_pref("network.manage-offline-status", false);
 user_pref("datareporting.healthreport.about.reportUrlUnified", "data:text/plain,");
 user_pref("browser.history.allowPopState", false);
 user_pref("browser.history.allowPushState", false);
