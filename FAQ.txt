@@ -19,7 +19,7 @@ Source:
 ================================
 
 
-I not waste my and anyones time trying to fix something which is protocol related and needs to be fixed withiin the source. Disabling it makes less sense because a) not every site use it b) nbot directly compromise your security setup c) not every page is exploitable or abuse this (since there is less benefit from doing it) d) I believe in layer security and not software 'security'.
+I not waste my and anyone's time trying to fix something which is protocol related and needs to be fixed within the source. Disabling it makes less sense because a) not every site use it b) not directly compromise your security setup c) not every page is exploitable or abuse this (since there is less benefit from doing it) d) I believe in layer security and not software 'security'.
 
 
 * WebRTC
@@ -27,3 +27,14 @@ I not waste my and anyones time trying to fix something which is protocol relate
 * OpenGL/Vulkan
 * Stuff which breaks functionally such as 'xyz' API
 * [Plugin](https://www.fxsitecompat.com/en-CA/docs/2015/plug-in-support-will-be-dropped-by-the-end-of-2016-except-flash/) related questions or things
+
+
+
+
+
+#3
+================================
+
+Does any of these tweaks really increase my security and how can I check it?
+
+There bunch of websites which testing specific API's, but it's questionable if you need the tweaks, I do believe that critical security things need to be fixed in the source code and not via any 'tweaks'. That said when you never enable JavaScript or visit pages which abusing privileges or such API's you're secure and do not need any tweaks.
