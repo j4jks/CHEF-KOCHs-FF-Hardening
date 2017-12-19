@@ -72,6 +72,10 @@ user_pref("social.directories", "");
 user_pref("social.share.activationPanelEnabled", false);
 user_pref("social.enabled", false);
 
+// Opt-out of shield studies
+user_pref("app.shield.optoutstudies.enabled", false);
+user_pref("extensions.shield-recipe-client.api_url", "");
+user_pref("extensions.shield-recipe-client.enabled", false);
 
 user_pref("extensions.blocklist.enabled", true);
 user_pref("extensions.blocklist.url", "https://blocklists.settings.services.mozilla.com/v1/blocklist/3/%APP_ID%/%APP_VERSION%/");
