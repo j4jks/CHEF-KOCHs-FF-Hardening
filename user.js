@@ -27,7 +27,10 @@ user_pref("browser.search.geoSpecificDefaults.url", "");
 user_pref("intl.accept_languages", "en-US, en");
 user_pref("javascript.use_us_english_locale", true); // (hidden pref)
 
-
+// Opt-out of shield studies
+user_pref("app.shield.optoutstudies.enabled", false);
+user_pref("extensions.shield-recipe-client.api_url", "");
+user_pref("extensions.shield-recipe-client.enabled", false);
 
 // user_pref("app.update.enabled", false);
 // user_pref("extensions.update.enabled", false);
