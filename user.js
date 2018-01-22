@@ -11,6 +11,7 @@ user_pref("browser.laterrun.enabled", false);
 user_pref("browser.shell.checkDefaultBrowser", false);
 
 
+// Geo IP 
 user_pref("geo.enabled", false);
 user_pref("geo.wifi.uri", "");
 user_pref("geo.wifi.xhr.timeout", 1);
@@ -18,9 +19,12 @@ user_pref("geo.wifi.logging.enabled", false);
 user_pref("geo.security.allowinsecure", false);
 user_pref("browser.search.geoip.url", "");
 user_pref("browser.search.geoip.timeout", 1);
+
+// Search lang
 user_pref("browser.search.countryCode", "US");
 user_pref("browser.search.region", "US");
 user_pref("intl.locale.matchOS", false);
+user_pref("intl.locale.requested", "en-US");
 user_pref("general.useragent.locale", "en-US");
 user_pref("browser.search.geoSpecificDefaults", false);
 user_pref("browser.search.geoSpecificDefaults.url", "");
@@ -32,8 +36,7 @@ user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("extensions.shield-recipe-client.api_url", "");
 user_pref("extensions.shield-recipe-client.enabled", false);
 
-// user_pref("app.update.enabled", false);
-// user_pref("extensions.update.enabled", false);
+
 user_pref("extensions.legacy.enable", true);
 user_pref("app.update.auto", false);
 user_pref("extensions.update.autoUpdateDefault", false);
@@ -48,6 +51,8 @@ user_pref("dom.ipc.plugins.reportCrashURL", false);
 user_pref("extensions.webservice.discoverURL", "http://127.0.0.1");
 user_pref("toolkit.telemetry.unified", false);
 user_pref("toolkit.telemetry.enabled", false);
+user_pref("toolkit.telemetry.updatePing.enabled", false);
+user_pref("toolkit.telemetry.bhrPing.enabled", false);
 user_pref("toolkit.telemetry.server", "");
 user_pref("toolkit.telemetry.archive.enabled", false);
 user_pref("toolkit.telemetry.cachedClientID", "");
@@ -60,6 +65,8 @@ user_pref("breakpad.reportURL", "");
 user_pref("browser.tabs.crashReporting.sendReport", false);
 user_pref("browser.crashReports.unsubmittedCheck.enabled", false);
 user_pref("browser.crashReports.unsubmittedCheck.autoSubmit", false);
+user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false);
+user_pref("browser.crashReports.unsubmittedCheck.autoSubmit3", false);
 user_pref("browser.newtab.preload", false);
 user_pref("browser.newtabpage.directory.source", "data:text/plain,");
 user_pref("browser.newtabpage.enabled", false);
@@ -67,13 +74,6 @@ user_pref("browser.newtabpage.enhanced", false);
 user_pref("browser.newtabpage.introShown", true);
 user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
 user_pref("browser.tabs.remote.allowLinkedWebInFileUriProcess", false);
-user_pref("social.whitelist", "");
-user_pref("social.toast-notifications.enabled", false);
-user_pref("social.shareDirectory", "");
-user_pref("social.remote-install.enabled", false);
-user_pref("social.directories", "");
-user_pref("social.share.activationPanelEnabled", false);
-user_pref("social.enabled", false);
 
 // Opt-out of shield studies
 user_pref("app.shield.optoutstudies.enabled", false);
@@ -181,6 +181,7 @@ user_pref("security.password_lifetime", 5);
 user_pref("signon.autofillForms", false);
 user_pref("signon.storeWhenAutocompleteOff", true);
 user_pref("security.insecure_password.ui.enabled", true);
+user_pref("security.insecure_connection_icon.enabled", true);
 user_pref("browser.fixup.hide_user_pass", true);
 user_pref("signon.formlessCapture.enabled", false);
 user_pref("signon.autofillForms.http", false);
@@ -307,7 +308,6 @@ user_pref("media.gmp-widevinecdm.visible", false);
 user_pref("media.gmp-widevinecdm.enabled", false);
 user_pref("media.gmp-widevinecdm.autoupdate", false);
 user_pref("media.eme.enabled", false);
-user_pref("media.eme.chromium-api.enabled", false);
 user_pref("browser.eme.ui.enabled", false);
 user_pref("media.gmp-gmpopenh264.enabled", false);
 user_pref("media.gmp-gmpopenh264.autoupdate", false);
@@ -339,10 +339,6 @@ user_pref("media.getusermedia.screensharing.allowed_domains", "");
 user_pref("media.getusermedia.browser.enabled", false);
 user_pref("media.getusermedia.audiocapture.enabled", false);
 user_pref("camera.control.face_detection.enabled", false);
-user_pref("media.mediasource.enabled", true);
-user_pref("media.mediasource.mp4.enabled", true);
-user_pref("media.mediasource.webm.audio.enabled", true);
-user_pref("media.mediasource.webm.enabled", true);
 user_pref("canvas.capturestream.enabled", false);
 user_pref("dom.imagecapture.enabled", false);
 user_pref("gfx.offscreencanvas.enabled", false);
@@ -409,7 +405,6 @@ user_pref("dom.vr.enabled", false);
 user_pref("media.navigator.enabled", false);
 user_pref("media.video_stats.enabled", false);
 user_pref("gfx.direct2d.disabled", true); // [WINDOWS]
-user_pref("layers.acceleration.disabled", true);
 user_pref("dom.w3c_touch_events.enabled", 0);
 user_pref("dom.webaudio.enabled", false);
 user_pref("media.ondevicechange.enabled", false);
@@ -434,11 +429,8 @@ user_pref("browser.pagethumbnails.capturing_disabled", true);
 user_pref("network.jar.open-unsafe-types", false);
 user_pref("ui.use_standins_for_native_colors", true); // (hidden pref)
 user_pref("devtools.webide.autoinstallADBHelper", false);
-user_pref("devtools.webide.autoinstallFxdtAdapters", false);
 user_pref("devtools.debugger.remote-enabled", false);
 user_pref("devtools.webide.enabled", false);
-user_pref("browser.casting.enabled", false);
-user_pref("gfx.layerscope.enabled", false);
 user_pref("network.http.spdy.enabled", false);
 user_pref("network.http.spdy.enabled.deps", false);
 user_pref("network.http.spdy.enabled.http2", false);
@@ -495,9 +487,11 @@ user_pref("privacy.resistFingerprinting", true);
 
 user_pref("network.cookie.cookieBehavior", 2);
 user_pref("network.cookie.thirdparty.sessionOnly", true);
+user_pref("network.cookie.thirdparty.nonsecureSessionOnly", true);
 // user_pref("network.cookie.lifetimePolicy", 0);
 // user_pref("network.cookie.lifetime.days", 90);
 // user_pref("dom.storage.enabled", false);
+
 user_pref("dom.storageManager.enabled", false);
 user_pref("browser.storageManager.enabled", false);
 user_pref("extensions.webextensions.keepStorageOnUninstall", false);
@@ -544,14 +538,16 @@ user_pref("view_source.tab", false);
 user_pref("layout.spellcheckDefault", 1);
 user_pref("ui.submenuDelay", 150);
 user_pref("browser.bookmarks.max_backups", 2);
+user_pref("browser.bookmarks.restore_default_bookmarks", false);
+//user_pref("browser.bookmarks.showMobileBookmarks", true);
 user_pref("browser.urlbar.clickSelectsAll", true);
 user_pref("browser.urlbar.doubleClickSelectsAll", false);
 user_pref("browser.tabs.insertRelatedAfterCurrent", true);
 user_pref("browser.tabs.selectOwnerOnClose", true);
 user_pref("browser.tabs.loadInBackground", true);
 user_pref("browser.tabs.loadDivertedInBackground", false);
-user_pref("browser.bookmarks.showRecentlyBookmarked", false);
 // user_pref("accessibility.typeaheadfind", true);
+// user_pref("accessibility.typeaheadfind.flashBar", 0);
 // user_pref("media.mp4.enabled", false);
 // user_pref("media.flac.enabled", false);
 // user_pref("media.ogg.enabled", false);
@@ -590,6 +586,7 @@ user_pref("pfs.datasource.url", "");
 
 
 user_pref("browser.safebrowsing.provider.google.appRepURL", "");
+user_pref("browser.safebrowsing.provider.google4.dataSharingURL", "");
 user_pref("security.tls.insecure_fallback_hosts.use_static_list", false);
 user_pref("dom.workers.sharedWorkers.enabled", false);
 // user_pref("dom.disable_image_src_set", true);
@@ -603,6 +600,7 @@ user_pref("browser.pocket.api", "");
 user_pref("browser.pocket.site", "");
 user_pref("browser.pocket.oAuthConsumerKey", "");
 user_pref("toolkit.telemetry.unifiedIsOptIn", true);
+user_pref("browser.ping-centre.telemetry", false);
 //user_pref("toolkit.cosmeticAnimations.enabled", false);
 user_pref("network.manage-offline-status", false);
 user_pref("datareporting.healthreport.about.reportUrlUnified", "data:text/plain,");
