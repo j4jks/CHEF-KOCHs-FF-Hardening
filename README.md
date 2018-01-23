@@ -4,9 +4,9 @@
     []          []  []  []   []         []          []      []    []   []
     []          []  []    [] [][][][][] []          [][][][][]  []       [] about:config
      
-    Firefox About:Config Tricks & Hardening (based on kb.mozillazine.org, 12bytes.org, ghacks & user.js project)
+    Firefox About:Config Tricks & Hardening (based on kb.mozillazine.org, 12bytes.org, user.js project)
     
-    Speed up and harden your Firefox!
+    Speed up and harden your Mozilla Firefox Browser!
 							==== Introduced by CHEF-KOCH ==== 
 	
 	
