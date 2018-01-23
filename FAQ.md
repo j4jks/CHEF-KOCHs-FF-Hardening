@@ -14,7 +14,6 @@ Source:
 
 
 
-
 #2 Wont fix
 ================================
 
@@ -30,11 +29,15 @@ I not waste my and anyone's time trying to fix something which is protocol relat
 
 
 
-
-
 #3
 ================================
 
 Does any of these tweaks really increase my security and how can I check it?
 
 There bunch of websites which testing specific API's, but it's questionable if you need the tweaks, I do believe that critical security things need to be fixed in the source code and not via any 'tweaks'. That said when you never enable JavaScript or visit pages which abusing privileges or such API's you're secure and do not need any tweaks.
+
+
+#4 What is Telemetry?
+================================
+Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring. The word is derived from Greek roots: tele = remote, and metron = measure. 
+Please note and consider to leave telemetry enabled, this helps Mozilla to secure the browser,it's not about tracking or spying the thing is that no one wants to send manually the needed information and at the end mostly such reports doesn't help at all cause something is missing and it consumes overall more time. 
