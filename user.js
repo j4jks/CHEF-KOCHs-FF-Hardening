@@ -14,11 +14,12 @@ user_pref("startup.homepage_welcome_url.additional", "");
 user_pref("startup.homepage_override_url", ""); // what's new page after updates
 user_pref("browser.laterrun.enabled", false);
 user_pref("browser.shell.checkDefaultBrowser", false);
+// user_pref("browser.startup.page", 0); //0=blank, 2=last & 1=home
 
 
 // Geo IP 
 user_pref("geo.enabled", false);
-user_pref("geo.wifi.uri", "");
+//user_pref("geo.wifi.uri", "");
 user_pref("geo.wifi.xhr.timeout", 1);
 user_pref("geo.wifi.logging.enabled", false);
 user_pref("geo.security.allowinsecure", false);
@@ -31,6 +32,7 @@ user_pref("browser.search.region", "US");
 user_pref("intl.locale.matchOS", false);
 user_pref("intl.locale.requested", "en-US");
 user_pref("general.useragent.locale", "en-US");
+user_pref("intl.regional_prefs.use_os_locales", false);
 user_pref("browser.search.geoSpecificDefaults", false);
 user_pref("browser.search.geoSpecificDefaults.url", "");
 user_pref("intl.accept_languages", "en-US, en");
@@ -42,15 +44,19 @@ user_pref("extensions.shield-recipe-client.api_url", "");
 user_pref("extensions.shield-recipe-client.enabled", false);
 
 
+// Apps + update
+// default - user_pref("extensions.update.enabled", true);
 user_pref("extensions.legacy.enable", true);
 user_pref("app.update.auto", false);
+// default - user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
 user_pref("extensions.update.autoUpdateDefault", false);
 user_pref("app.update.service.enabled", false);
-user_pref("app.update.staging.enabled", false);
+//user_pref("app.update.staging.enabled", false);
 user_pref("app.update.silent", false);
 user_pref("extensions.getAddons.cache.enabled", false);
 user_pref("lightweightThemes.update.enabled", false);
 user_pref("browser.search.update", false);
+user_pref("extensions.getAddons.showPane", false);
 user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
 user_pref("dom.ipc.plugins.reportCrashURL", false);
 user_pref("extensions.webservice.discoverURL", "http://127.0.0.1");
@@ -541,7 +547,7 @@ user_pref("browser.tabs.closeWindowWithLastTab", false);
 user_pref("browser.backspace_action", 2);
 // user_pref("xpinstall.signatures.required", false);
 user_pref("browser.link.open_newwindow", 3);
-user_pref("browser.ctrlTab.previews", true);
+//user_pref("browser.ctrlTab.previews", true);
 user_pref("view_source.tab", false);
 user_pref("layout.spellcheckDefault", 1);
 user_pref("ui.submenuDelay", 150);
@@ -554,17 +560,6 @@ user_pref("browser.tabs.insertRelatedAfterCurrent", true);
 user_pref("browser.tabs.selectOwnerOnClose", true);
 user_pref("browser.tabs.loadInBackground", true);
 user_pref("browser.tabs.loadDivertedInBackground", false);
-// user_pref("accessibility.typeaheadfind", true);
-// user_pref("accessibility.typeaheadfind.flashBar", 0);
-// user_pref("media.mp4.enabled", false);
-// user_pref("media.flac.enabled", false);
-// user_pref("media.ogg.enabled", false);
-// user_pref("media.ogg.flac.enabled", false);
-// user_pref("media.opus.enabled", false);
-// user_pref("media.raw.enabled", false);
-// user_pref("media.wave.enabled", false);
-// user_pref("media.webm.enabled", false);
-// user_pref("media.wmf.enabled", false);
 user_pref("media.wmf.vp9.enabled", true);
 
 // user_pref("reader.parse-on-load.enabled", false);
