@@ -1,3 +1,8 @@
+/*
+Telemetry hosts
+0.0.0.0 incoming.telemetry.mozilla.org 
+*/
+
 // user_pref("browser.privatebrowsing.autostart", true);
 user_pref("browser.slowStartup.notificationDisabled", true);
 user_pref("browser.slowStartup.maxSamples", 0);
@@ -58,6 +63,9 @@ user_pref("toolkit.telemetry.archive.enabled", false);
 user_pref("toolkit.telemetry.cachedClientID", "");
 user_pref("toolkit.telemetry.newProfilePing.enabled", false);
 user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
+user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
+user_pref("browser.newtabpage.activity-stream.telemetry.ping.endpoint", "");
+user_pref("browser.newtabpage.activity-stream.telemetry", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("datareporting.healthreport.about.reportUrl", "data:text/plain,");
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
