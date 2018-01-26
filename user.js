@@ -485,7 +485,7 @@ user_pref("privacy.firstparty.isolate", true);
 user_pref("privacy.firstparty.isolate.restrict_opener_access", true);
 
 
-user_pref("privacy.resistFingerprinting", true);
+//user_pref("privacy.resistFingerprinting", true); // This add-on requires a newer version of Firefox (at least version 57.0). You are using Firefox 52.0.
 // user_pref("privacy.window.maxInnerWidth", 1600);
 // user_pref("privacy.window.maxInnerHeight", 900);
 
