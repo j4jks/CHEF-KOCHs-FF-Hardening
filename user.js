@@ -481,15 +481,6 @@ user_pref("security.csp.enable", true);
 user_pref("security.csp.experimentalEnabled", true);
 
 
-
-// user_pref("general.useragent.override", "Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0");
-// user_pref("general.buildID.override", "20100101");
-// user_pref("general.appname.override", "Netscape");
-// user_pref("general.appversion.override", "5.0 (Windows)");
-// user_pref("general.platform.override", "Win32");
-// user_pref("general.oscpu.override", "Windows NT 6.1");
-
-
 user_pref("privacy.firstparty.isolate", true);
 user_pref("privacy.firstparty.isolate.restrict_opener_access", true);
 

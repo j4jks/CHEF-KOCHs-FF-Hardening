@@ -17,7 +17,6 @@ Source:
 #2 Wont fix
 ================================
 
-
 I not waste my and anyone's time trying to fix something which is protocol related and needs to be fixed within the source. Disabling it makes less sense because a) not every site use it b) not directly compromise your security setup c) not every page is exploitable or abuse this (since there is less benefit from doing it) d) I believe in layer security and not software 'security'.
 
 
@@ -39,5 +38,15 @@ There bunch of websites which testing specific API's, but it's questionable if y
 
 #4 What is Telemetry?
 ================================
+
 Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring. The word is derived from Greek roots: tele = remote, and metron = measure. 
 Please note and consider to leave telemetry enabled, this helps Mozilla to secure the browser,it's not about tracking or spying the thing is that no one wants to send manually the needed information and at the end mostly such reports doesn't help at all cause something is missing and it consumes overall more time. 
+
+
+#5 Optional addons to comply several Firefox functions
+================================
+
+The following extensions are not there to 'harden' Mozilla Firefox there only my personally recommendation to comply certain Fiefox functions.
+
+* [Temporary Containers Firefox Add-on](https://github.com/stoically/firefox-add-on-temporary-containers#readme)
+* [Multi-Account Containers](https://github.com/mozilla/multi-account-containers)

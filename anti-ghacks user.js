@@ -1,11 +1,11 @@
 /******
 * Name: Anti-ghacks user.js
 * Date: 28 November 2017
-* version: 0.9
-* authors: CHEF-KOCH
+* Version: 0.9
+* Authors: CHEF-KOCH
 
 * README:
-* This little file is designed to remove the ghacks user.js changes which aren't making any sense (in a security related aspect). See my comments here: https://www.ghacks.net/2017/08/22/firefox-55-new-preferences-and-ghacks-user-js-changes/
+* This little file is designed to remove the ghacks user.js changes which aren't making any sense in a security related aspect. See my comments here: https://www.ghacks.net/2017/08/22/firefox-55-new-preferences-and-ghacks-user-js-changes/
 
 * I'll not open an issue ticket on ghacks user.js repo, since the main contributor of the ghacks user.js has another point of view when it comes to browser security, e.g. he disables all cookies but suggest/recommed in their own wiki to use a cookie black/whitelist addon - why when Firefox can native do this via 'settings' - history - cookies [exceptions]?! The addon he  suggest also lowers the security and you might run into possible addon fakes, besides this each addon rises memory consumptation. 
 * Disabling automatically addon-updates is also horrible, you lower your security point and not increase it because in fact 99% of all people never review addons or understanding the source code. 
@@ -26,24 +26,23 @@ user_pref("app.update.silent", true);
 user_pref("lightweightThemes.update.enabled", true);
 user_pref("browser.search.update", true);
 user_pref("browser.tabs.crashReporting.sendReport", true);
-user_pref("browser.crashReports.unsubmittedCheck.enabled", true); // (FF51+)
-user_pref("browser.crashReports.unsubmittedCheck.autoSubmit", true); // (FF51+)
+user_pref("browser.crashReports.unsubmittedCheck.enabled", true);
+user_pref("browser.crashReports.unsubmittedCheck.autoSubmit", true);
 
 //user_pref("browser.safebrowsing.malware.enabled", true);
 //user_pref("browser.safebrowsing.phishing.enabled", true); // (FF50+)
 
    // user_pref("browser.safebrowsing.provider.google.updateURL", "");
    // user_pref("browser.safebrowsing.provider.google.gethashURL", "");
-   // user_pref("browser.safebrowsing.provider.google4.updateURL", ""); // (FF50+)
-   // user_pref("browser.safebrowsing.provider.google4.gethashURL", ""); // (FF50+)
+   // user_pref("browser.safebrowsing.provider.google4.updateURL", "");
+   // user_pref("browser.safebrowsing.provider.google4.gethashURL", "");
 
    // user_pref("browser.safebrowsing.allowOverride", false);
 
    
-user_pref("privacy.trackingprotection.pbmode.enabled", true); // default true
-user_pref("privacy.trackingprotection.enabled", false); // default false
-user_pref("urlclassifier.trackingTable", "test-track-simple,base-track-digest256,content-track-digest256"); // strict
-
+user_pref("privacy.trackingprotection.pbmode.enabled", true);
+user_pref("privacy.trackingprotection.enabled", false);
+user_pref("urlclassifier.trackingTable", "test-track-simple,base-track-digest256,content-track-digest256");
 /* 0424: disable Mozilla's tracking protection and Flash blocklist updates ***/
    // user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
    // user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
@@ -70,14 +69,13 @@ user_pref("browser.urlbar.maxRichResults", 5);
 //user_pref("browser.sessionstore.resume_from_crash", false);
 user_pref("browser.shell.shortcutFavicons", true);
 user_pref("alerts.showFavicons", true);
-
 user_pref("browser.display.use_document_fonts", 1);
 user_pref("font.name.serif.x-unicode", "Georgia");
-user_pref("font.name.serif.x-western", "Georgia"); // default Times New Roman
+user_pref("font.name.serif.x-western", "Georgia"); // default is Times New Roman
 user_pref("font.name.sans-serif.x-unicode", "Arial");
-user_pref("font.name.sans-serif.x-western", "Arial"); // default Arial
+user_pref("font.name.sans-serif.x-western", "Arial"); // default is Arial
 user_pref("font.name.monospace.x-unicode", "Lucida Console");
-user_pref("font.name.monospace.x-western", "Lucida Console"); // default Courier New
+user_pref("font.name.monospace.x-western", "Lucida Console"); // default is Courier New
 
 
 user_pref("privacy.userContext.ui.enabled", true);
@@ -89,7 +87,7 @@ user_pref("privacy.userContext.longPressBehavior", 2);
 user_pref("media.gmp-provider.enabled", true);
 user_pref("media.gmp.trial-create.enabled", true);
 user_pref("media.gmp-manager.url", "data:text/plain,");
-user_pref("media.gmp-manager.url.override", "data:text/plain,"); // (hidden pref)
+user_pref("media.gmp-manager.url.override", "data:text/plain,");
 user_pref("media.gmp-manager.updateEnabled", true); // disable local fallback (hidden pref)
 /* 1825: disable widevine CDM (Content Decryption Module) [SETUP] ***/
 user_pref("media.gmp-widevinecdm.visible", true);
@@ -100,7 +98,7 @@ user_pref("media.eme.enabled", true); // Options>Content>Play DRM Content
 user_pref("browser.eme.ui.enabled", true); // hides "Play DRM Content" checkbox, restart required
 /* 1840: disable the OpenH264 Video Codec by Cisco to "Never Activate"
  * This is the bundled codec used for video chat in WebRTC ***/
-user_pref("media.gmp-gmpopenh264.enabled", true); // (hidden pref)
+user_pref("media.gmp-gmpopenh264.enabled", true);
 user_pref("media.gmp-gmpopenh264.autoupdate", true);
 
 
@@ -111,9 +109,9 @@ user_pref("media.peerconnection.identity.enabled", true);
 user_pref("media.peerconnection.identity.timeout", 1);
 user_pref("media.peerconnection.turn.disable", true);
 user_pref("media.peerconnection.ice.tcp", true);
-user_pref("media.navigator.video.enabled", true); // video capability for WebRTC
-user_pref("media.peerconnection.ice.default_address_only", true); // (FF42-FF50)
-user_pref("media.peerconnection.ice.no_host", true); // (FF51+)
+user_pref("media.navigator.video.enabled", true);
+user_pref("media.peerconnection.ice.default_address_only", true);
+user_pref("media.peerconnection.ice.no_host", true);
 
 user_pref("webgl.disabled", false);
 user_pref("pdfjs.enableWebGL", true);
@@ -121,7 +119,7 @@ user_pref("webgl.min_capability_mode", false);
 user_pref("webgl.disable-extensions", false);
 user_pref("webgl.disable-fail-if-major-performance-caveat", false);
 user_pref("webgl.enable-debug-renderer-info", true);
-user_pref("webgl.dxgl.enabled", true); // [WINDOWS]
+user_pref("webgl.dxgl.enabled", true);
 user_pref("webgl.enable-webgl2", true);
 
 user_pref("media.getusermedia.screensharing.enabled", true);
@@ -130,12 +128,9 @@ user_pref("media.getusermedia.browser.enabled", true);
 user_pref("media.getusermedia.audiocapture.enabled", true);
 user_pref("camera.control.face_detection.enabled", true);
 
-/*
-user_pref("media.autoplay.enabled", false);
-user_pref("media.block-autoplay-until-in-foreground", true);
-*/
 
-
+//user_pref("media.autoplay.enabled", false);
+//user_pref("media.block-autoplay-until-in-foreground", true);
 
 
 
@@ -155,7 +150,7 @@ user_pref("dom.event.clipboardevents.enabled", true);
 user_pref("dom.webaudio.enabled", true);
 user_pref("browser.download.folderList", 0);
 user_pref("browser.helperApps.deleteTempFileOnExit", true);
-user_pref("browser.pagethumbnails.capturing_disabled", false); // (hidden pref)
+user_pref("browser.pagethumbnails.capturing_disabled", false);
 user_pref("pdfjs.disabled", true);
 user_pref("network.dns.disableIPv6", true);
 user_pref("network.http.fast-fallback-to-IPv4", true);
@@ -163,13 +158,8 @@ user_pref("mathml.disabled", false);
 user_pref("network.cookie.cookieBehavior", 1);
 user_pref("network.cookie.lifetimePolicy", 2);
 user_pref("network.cookie.lifetime.days", 7);
-/* 2705: disable DOM (Document Object Model) Storage
- * [WARNING] This will break a LOT of sites' functionality.
- * You are better off using an extension for more granular control ***/
-   // user_pref("dom.storage.enabled", false);
 user_pref("device.sensors.enabled", false);
 user_pref("browser.zoom.siteSpecific", true);
-
 
 
 //user_pref("media.video_stats.enabled", false);
