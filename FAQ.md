@@ -28,10 +28,8 @@ I not waste my and anyone's time trying to fix something which is protocol relat
 
 
 
-#3
+#3 Does any of these tweaks really increase my security and how can I check it?
 ================================
-
-Does any of these tweaks really increase my security and how can I check it?
 
 There bunch of websites which testing specific API's, but it's questionable if you need the tweaks, I do believe that critical security things need to be fixed in the source code and not via any 'tweaks'. That said when you never enable JavaScript or visit pages which abusing privileges or such API's you're secure and do not need any tweaks.
 
@@ -46,7 +44,13 @@ Please note and consider to leave telemetry enabled, this helps Mozilla to secur
 #5 Optional addons to comply several Firefox functions
 ================================
 
-The following extensions are not there to 'harden' Mozilla Firefox there only my personally recommendation to comply certain Fiefox functions.
+The following extensions are not there to 'harden' Mozilla Firefox there only my personally recommendation to comply certain Fiefox functions. It's not ment that such addons are there to 'secure' your web-habits, there also not there to avoid data leaks.
 
 * [Temporary Containers Firefox Add-on](https://github.com/stoically/firefox-add-on-temporary-containers#readme)
 * [Multi-Account Containers](https://github.com/mozilla/multi-account-containers)
+* [Nano Adblocker](https://github.com/NanoAdblocker/NanoCore)
+* [Decentralyes](https://decentraleyes.org/)
+* [uMatrix](https://github.com/gorhill/uMatrix)
+* [NoScript](https://noscript.net/)
+* [Kee](https://github.com/kee-org/browser-addon) - Alternative: [Tusk](https://github.com/subdavis/Tusk)
+* [Violentmonkey](https://github.com/violentmonkey/violentmonkey)
