@@ -1,6 +1,8 @@
 /*
 Telemetry hosts
-0.0.0.0 incoming.telemetry.mozilla.org 
+0.0.0.0 incoming.telemetry.mozilla.org
+0.0.0.0 telemetry.mozilla.org
+0.0.0.0 experiments.mozilla.org
 */
 
 // user_pref("browser.privatebrowsing.autostart", true);
@@ -161,7 +163,7 @@ user_pref("network.protocol-handler.external.ms-windows-store", false);
 user_pref("network.predictor.enable-prefetch", false);
 
 
-user_pref("keyword.enabled", false);
+//user_pref("keyword.enabled", false);
 user_pref("browser.fixup.alternate.enabled", false);
 user_pref("browser.urlbar.trimURLs", false);
 user_pref("browser.sessionhistory.max_entries", 10);
