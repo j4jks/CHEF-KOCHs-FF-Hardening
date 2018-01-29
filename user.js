@@ -87,7 +87,6 @@ user_pref("browser.newtabpage.enabled", false);
 user_pref("browser.newtabpage.enhanced", false);
 user_pref("browser.newtabpage.introShown", true);
 user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
-user_pref("browser.tabs.remote.allowLinkedWebInFileUriProcess", false);
 
 // Opt-out of shield studies
 user_pref("app.shield.optoutstudies.enabled", false);
@@ -225,23 +224,6 @@ user_pref("browser.shell.shortcutFavicons", false);
 // user_pref("browser.chrome.site_icons", false);
 // user_pref("browser.chrome.favicons", false);
 user_pref("alerts.showFavicons", false);
-
-
-
-// user_pref("browser.tabs.remote.autostart", true);
-// user_pref("browser.tabs.remote.autostart.2", true); // (FF49+) (hidden pref)
-// user_pref("browser.tabs.remote.force-enable", true); // (hidden pref)
-// user_pref("extensions.e10sBlocksEnabling", false);
-// user_pref("dom.ipc.processCount", 4);
-// user_pref("dom.ipc.processCount.file", 1);
-// user_pref("extensions.webextensions.remote", true);
-user_pref("browser.tabs.remote.separateFileUriProcess", true);
-user_pref("dom.ipc.shims.enabledWarnings", true);
-// user_pref("dom.ipc.processCount.extension", 1);
-// user_pref("security.sandbox.content.level", "donotuse");
-// user_pref("dom.ipc.plugins.sandbox-level.default", "donotuse");
-// user_pref("dom.ipc.plugins.sandbox-level.flash", "donotuse");
-// user_pref("security.sandbox.logging.enabled", true);
 
 
 // user_pref("security.ssl.require_safe_negotiation", true);
