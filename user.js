@@ -382,7 +382,7 @@ user_pref("dom.vibrator.enabled", false);
 user_pref("dom.popup_maximum", 3);
 user_pref("dom.popup_allowed_events", "click dblclick");
 user_pref("dom.idle-observers-api.enabled", false);
-user_pref("full-screen-api.enabled", false);
+//user_pref("full-screen-api.enabled", false);
 user_pref("javascript.options.asmjs", false);
 // user_pref("javascript.options.ion", false);
 // user_pref("javascript.options.baselinejit", false);
