@@ -276,13 +276,13 @@ user_pref("gfx.font_rendering.graphite.enabled", false);
 // user_pref("font.system.whitelist", "");
 
 
-
+// Ref
 user_pref("network.http.sendRefererHeader", 2);
-user_pref("network.http.referer.trimmingPolicy", 0);
-user_pref("network.http.referer.XOriginPolicy", 1);
-user_pref("network.http.referer.XOriginTrimmingPolicy", 0);
-user_pref("network.http.referer.spoofSource", false);
-user_pref("network.http.referer.userControlPolicy", 3);
+user_pref("network.http.referer.trimmingPolicy", 1);
+user_pref("network.http.referer.XOriginPolicy", 0);
+user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
+user_pref("network.http.referer.spoofSource", true);
+user_pref("network.http.referer.userControlPolicy", 2);
 user_pref("network.http.referer.hideOnionSource", true);
 user_pref("privacy.donottrackheader.enabled", false);
 
