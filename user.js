@@ -1,10 +1,3 @@
-/*
-Telemetry hosts
-0.0.0.0 incoming.telemetry.mozilla.org
-0.0.0.0 telemetry.mozilla.org
-0.0.0.0 experiments.mozilla.org
-*/
-
 // user_pref("browser.privatebrowsing.autostart", true);
 user_pref("browser.slowStartup.notificationDisabled", true);
 user_pref("browser.slowStartup.maxSamples", 0);
@@ -21,7 +14,6 @@ user_pref("browser.shell.checkDefaultBrowser", false);
 
 // Geo IP 
 user_pref("geo.enabled", false);
-//user_pref("geo.wifi.uri", "");
 user_pref("geo.wifi.xhr.timeout", 1);
 user_pref("geo.wifi.logging.enabled", false);
 user_pref("geo.security.allowinsecure", false);
