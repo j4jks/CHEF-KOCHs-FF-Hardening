@@ -261,7 +261,7 @@ user_pref("gfx.font_rendering.graphite.enabled", false);
 // Ref
 user_pref("network.http.sendRefererHeader", 2);
 user_pref("network.http.referer.trimmingPolicy", 1);
-user_pref("network.http.referer.XOriginPolicy", 0);
+user_pref("network.http.referer.XOriginPolicy", 2);
 user_pref("network.http.referer.defaultPolicy", 3);
 user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
 user_pref("network.http.referer.spoofSource", true);
