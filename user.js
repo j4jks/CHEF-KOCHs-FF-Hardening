@@ -225,7 +225,7 @@ user_pref("experiments.manifest.uri", "");
 user_pref("experiments.supported", false);
 user_pref("extensions.autoDisableScopes", 15);
 user_pref("extensions.blocklist.enabled", true);
-user_pref("extensions.blocklist.url", "https://blocklists.settings.services.mozilla.com/v1/blocklist/3/%APP_ID%/%APP_VERSION%/");
+user_pref("extensions.blocklist.url", "");
 user_pref("extensions.enabledScopes", 1);
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.available", "off");
@@ -252,7 +252,7 @@ user_pref("geo.enabled", false);
 user_pref("geo.security.allowinsecure", false);
 user_pref("geo.wifi.logging.enabled", false);
 user_pref("gfx.direct2d.disabled", true);
-user_pref("gfx.downloadable_fonts.enabled", true);  //controlled via uBO
+user_pref("gfx.downloadable_fonts.enabled", true); // or via uBO
 user_pref("gfx.downloadable_fonts.woff2.enabled", false);
 user_pref("gfx.font_rendering.graphite.enabled", false);
 user_pref("gfx.offscreencanvas.enabled", false);
