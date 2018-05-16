@@ -44,7 +44,7 @@ Please note and consider to leave telemetry enabled, this helps Mozilla to secur
 #5 Optional addons to comply several Firefox functions
 ================================
 
-The following extensions are not there to 'harden' Mozilla Firefox there only my personally recommendation to comply certain Fiefox functions. It's not ment that such addons are there to 'secure' your web-habits, there also not there to avoid data leaks.
+The following extensions are not there to 'harden' Mozilla Firefox there only my personally recommendation to comply certain Fiefox functions. It's not meant that such addons are there to 'secure' your web-habits, there also not there to avoid data leaks.
 
 * [Temporary Containers Firefox Add-on](https://github.com/stoically/firefox-add-on-temporary-containers#readme)
 * [Multi-Account Containers](https://github.com/mozilla/multi-account-containers)
@@ -55,4 +55,3 @@ The following extensions are not there to 'harden' Mozilla Firefox there only my
 * [Kee](https://github.com/kee-org/browser-addon) - Alternative: [Tusk](https://github.com/subdavis/Tusk)
 * [Violentmonkey](https://github.com/violentmonkey/violentmonkey)
 * [Extension source viewer](https://addons.mozilla.org/en-GB/firefox/addon/crxviewer/)
-* 
